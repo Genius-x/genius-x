@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		145AE35D1968424A002278EB /* Com.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3111968424A002278EB /* Com.cpp */; };
+		145AE35E1968424A002278EB /* Com.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3111968424A002278EB /* Com.cpp */; };
+		145AE35F1968424A002278EB /* Com.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3121968424A002278EB /* Com.h */; };
+		145AE3601968424A002278EB /* AnimationCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3151968424A002278EB /* AnimationCom.cpp */; };
+		145AE3611968424A002278EB /* AnimationCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3151968424A002278EB /* AnimationCom.cpp */; };
+		145AE3621968424A002278EB /* AnimationCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3161968424A002278EB /* AnimationCom.h */; };
+		145AE3631968424A002278EB /* DragCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3171968424A002278EB /* DragCom.cpp */; };
+		145AE3641968424A002278EB /* DragCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3171968424A002278EB /* DragCom.cpp */; };
+		145AE3651968424A002278EB /* DragCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3181968424A002278EB /* DragCom.h */; };
+		145AE3661968424A002278EB /* EntityCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3191968424A002278EB /* EntityCom.cpp */; };
+		145AE3671968424A002278EB /* EntityCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3191968424A002278EB /* EntityCom.cpp */; };
+		145AE3681968424A002278EB /* EntityCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE31A1968424A002278EB /* EntityCom.h */; };
+		145AE3691968424A002278EB /* NodeCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE31B1968424A002278EB /* NodeCom.cpp */; };
+		145AE36A1968424A002278EB /* NodeCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE31B1968424A002278EB /* NodeCom.cpp */; };
+		145AE36B1968424A002278EB /* NodeCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE31C1968424A002278EB /* NodeCom.h */; };
+		145AE36C1968424A002278EB /* ParticleCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE31D1968424A002278EB /* ParticleCom.cpp */; };
+		145AE36D1968424A002278EB /* ParticleCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE31D1968424A002278EB /* ParticleCom.cpp */; };
+		145AE36E1968424A002278EB /* ParticleCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE31E1968424A002278EB /* ParticleCom.h */; };
+		145AE36F1968424A002278EB /* TestCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE31F1968424A002278EB /* TestCom.cpp */; };
+		145AE3701968424A002278EB /* TestCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE31F1968424A002278EB /* TestCom.cpp */; };
+		145AE3711968424A002278EB /* TestCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3201968424A002278EB /* TestCom.h */; };
+		145AE3721968424A002278EB /* AnimationSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3221968424A002278EB /* AnimationSystem.cpp */; };
+		145AE3731968424A002278EB /* AnimationSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3221968424A002278EB /* AnimationSystem.cpp */; };
+		145AE3741968424A002278EB /* AnimationSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3231968424A002278EB /* AnimationSystem.h */; };
+		145AE3751968424A002278EB /* DragSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3241968424A002278EB /* DragSystem.cpp */; };
+		145AE3761968424A002278EB /* DragSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3241968424A002278EB /* DragSystem.cpp */; };
+		145AE3771968424A002278EB /* DragSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3251968424A002278EB /* DragSystem.h */; };
+		145AE3781968424A002278EB /* EntitySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3261968424A002278EB /* EntitySystem.cpp */; };
+		145AE3791968424A002278EB /* EntitySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3261968424A002278EB /* EntitySystem.cpp */; };
+		145AE37A1968424A002278EB /* EntitySystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3271968424A002278EB /* EntitySystem.h */; };
+		145AE37B1968424A002278EB /* NodeSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3281968424A002278EB /* NodeSystem.cpp */; };
+		145AE37C1968424A002278EB /* NodeSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3281968424A002278EB /* NodeSystem.cpp */; };
+		145AE37D1968424A002278EB /* NodeSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3291968424A002278EB /* NodeSystem.h */; };
+		145AE37E1968424A002278EB /* TestSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE32A1968424A002278EB /* TestSystem.cpp */; };
+		145AE37F1968424A002278EB /* TestSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE32A1968424A002278EB /* TestSystem.cpp */; };
+		145AE3801968424A002278EB /* TestSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE32B1968424A002278EB /* TestSystem.h */; };
+		145AE3811968424A002278EB /* ECSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE32C1968424A002278EB /* ECSManager.cpp */; };
+		145AE3821968424A002278EB /* ECSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE32C1968424A002278EB /* ECSManager.cpp */; };
+		145AE3831968424A002278EB /* ECSManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE32D1968424A002278EB /* ECSManager.h */; };
+		145AE3841968424A002278EB /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE32E1968424A002278EB /* Entity.cpp */; };
+		145AE3851968424A002278EB /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE32E1968424A002278EB /* Entity.cpp */; };
+		145AE3861968424A002278EB /* Entity.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE32F1968424A002278EB /* Entity.h */; };
+		145AE3871968424A002278EB /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3301968424A002278EB /* System.cpp */; };
+		145AE3881968424A002278EB /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3301968424A002278EB /* System.cpp */; };
+		145AE3891968424A002278EB /* System.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3311968424A002278EB /* System.h */; };
+		145AE3931968424A002278EB /* ComData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE33A1968424A002278EB /* ComData.cpp */; };
+		145AE3941968424A002278EB /* ComData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE33A1968424A002278EB /* ComData.cpp */; };
+		145AE3951968424A002278EB /* ComData.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE33B1968424A002278EB /* ComData.h */; };
+		145AE3961968424A002278EB /* Resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE33C1968424A002278EB /* Resource.cpp */; };
+		145AE3971968424A002278EB /* Resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE33C1968424A002278EB /* Resource.cpp */; };
+		145AE3981968424A002278EB /* Resource.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE33D1968424A002278EB /* Resource.h */; };
+		145AE3991968424A002278EB /* ResourceCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE33E1968424A002278EB /* ResourceCache.cpp */; };
+		145AE39A1968424A002278EB /* ResourceCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE33E1968424A002278EB /* ResourceCache.cpp */; };
+		145AE39B1968424A002278EB /* ResourceCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE33F1968424A002278EB /* ResourceCache.h */; };
+		145AE39C1968424A002278EB /* ResourceDataDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3401968424A002278EB /* ResourceDataDelegate.h */; };
+		145AE39D1968424A002278EB /* genius-x.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3411968424A002278EB /* genius-x.h */; };
+		145AE3A01968424A002278EB /* GXMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3431968424A002278EB /* GXMacros.h */; };
+		145AE3B91968424A002278EB /* Common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3561968424A002278EB /* Common.cpp */; };
+		145AE3BA1968424A002278EB /* Common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3561968424A002278EB /* Common.cpp */; };
+		145AE3BB1968424A002278EB /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3571968424A002278EB /* Common.h */; };
+		145AE3BC1968424A002278EB /* DataBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3581968424A002278EB /* DataBase.cpp */; };
+		145AE3BD1968424A002278EB /* DataBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE3581968424A002278EB /* DataBase.cpp */; };
+		145AE3BE1968424A002278EB /* DataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE3591968424A002278EB /* DataBase.h */; };
+		145AE3BF1968424A002278EB /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE35A1968424A002278EB /* GameConfig.cpp */; };
+		145AE3C01968424A002278EB /* GameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AE35A1968424A002278EB /* GameConfig.cpp */; };
+		145AE3C11968424A002278EB /* GameConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 145AE35B1968424A002278EB /* GameConfig.h */; };
+		1463A1A2196AE9F600B0056E /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1463A1A1196AE9F600B0056E /* libcocos2dx Mac.a */; };
+		14AC949E196B5CC40039CCA3 /* FTUE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9490196B5CC40039CCA3 /* FTUE.cpp */; };
+		14AC949F196B5CC40039CCA3 /* FTUE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9490196B5CC40039CCA3 /* FTUE.cpp */; };
+		14AC94A0196B5CC40039CCA3 /* FTUE.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC9491196B5CC40039CCA3 /* FTUE.h */; };
+		14AC94A1196B5CC40039CCA3 /* GameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9492196B5CC40039CCA3 /* GameSystem.cpp */; };
+		14AC94A2196B5CC40039CCA3 /* GameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9492196B5CC40039CCA3 /* GameSystem.cpp */; };
+		14AC94A3196B5CC40039CCA3 /* GameSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC9493196B5CC40039CCA3 /* GameSystem.h */; };
+		14AC94A4196B5CC40039CCA3 /* HttpBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9494196B5CC40039CCA3 /* HttpBase.cpp */; };
+		14AC94A5196B5CC40039CCA3 /* HttpBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9494196B5CC40039CCA3 /* HttpBase.cpp */; };
+		14AC94A6196B5CC40039CCA3 /* HttpBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC9495196B5CC40039CCA3 /* HttpBase.h */; };
+		14AC94A7196B5CC40039CCA3 /* Localization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9496196B5CC40039CCA3 /* Localization.cpp */; };
+		14AC94A8196B5CC40039CCA3 /* Localization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9496196B5CC40039CCA3 /* Localization.cpp */; };
+		14AC94A9196B5CC40039CCA3 /* Localization.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC9497196B5CC40039CCA3 /* Localization.h */; };
+		14AC94AA196B5CC40039CCA3 /* MessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9498196B5CC40039CCA3 /* MessageBox.cpp */; };
+		14AC94AB196B5CC40039CCA3 /* MessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC9498196B5CC40039CCA3 /* MessageBox.cpp */; };
+		14AC94AC196B5CC40039CCA3 /* MessageBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC9499196B5CC40039CCA3 /* MessageBox.h */; };
+		14AC94AD196B5CC40039CCA3 /* Notification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC949A196B5CC40039CCA3 /* Notification.cpp */; };
+		14AC94AE196B5CC40039CCA3 /* Notification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC949A196B5CC40039CCA3 /* Notification.cpp */; };
+		14AC94AF196B5CC40039CCA3 /* Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC949B196B5CC40039CCA3 /* Notification.h */; };
+		14AC94B0196B5CC40039CCA3 /* Statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC949C196B5CC40039CCA3 /* Statistics.cpp */; };
+		14AC94B1196B5CC40039CCA3 /* Statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AC949C196B5CC40039CCA3 /* Statistics.cpp */; };
+		14AC94B2196B5CC40039CCA3 /* Statistics.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC949D196B5CC40039CCA3 /* Statistics.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		147EF69019684145000D2E7F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		145AE3111968424A002278EB /* Com.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Com.cpp; sourceTree = "<group>"; };
+		145AE3121968424A002278EB /* Com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Com.h; sourceTree = "<group>"; };
+		145AE3151968424A002278EB /* AnimationCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationCom.cpp; sourceTree = "<group>"; };
+		145AE3161968424A002278EB /* AnimationCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCom.h; sourceTree = "<group>"; };
+		145AE3171968424A002278EB /* DragCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DragCom.cpp; sourceTree = "<group>"; };
+		145AE3181968424A002278EB /* DragCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCom.h; sourceTree = "<group>"; };
+		145AE3191968424A002278EB /* EntityCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntityCom.cpp; sourceTree = "<group>"; };
+		145AE31A1968424A002278EB /* EntityCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityCom.h; sourceTree = "<group>"; };
+		145AE31B1968424A002278EB /* NodeCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeCom.cpp; sourceTree = "<group>"; };
+		145AE31C1968424A002278EB /* NodeCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCom.h; sourceTree = "<group>"; };
+		145AE31D1968424A002278EB /* ParticleCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleCom.cpp; sourceTree = "<group>"; };
+		145AE31E1968424A002278EB /* ParticleCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleCom.h; sourceTree = "<group>"; };
+		145AE31F1968424A002278EB /* TestCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestCom.cpp; sourceTree = "<group>"; };
+		145AE3201968424A002278EB /* TestCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCom.h; sourceTree = "<group>"; };
+		145AE3221968424A002278EB /* AnimationSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationSystem.cpp; sourceTree = "<group>"; };
+		145AE3231968424A002278EB /* AnimationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSystem.h; sourceTree = "<group>"; };
+		145AE3241968424A002278EB /* DragSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DragSystem.cpp; sourceTree = "<group>"; };
+		145AE3251968424A002278EB /* DragSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragSystem.h; sourceTree = "<group>"; };
+		145AE3261968424A002278EB /* EntitySystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntitySystem.cpp; sourceTree = "<group>"; };
+		145AE3271968424A002278EB /* EntitySystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntitySystem.h; sourceTree = "<group>"; };
+		145AE3281968424A002278EB /* NodeSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeSystem.cpp; sourceTree = "<group>"; };
+		145AE3291968424A002278EB /* NodeSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeSystem.h; sourceTree = "<group>"; };
+		145AE32A1968424A002278EB /* TestSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestSystem.cpp; sourceTree = "<group>"; };
+		145AE32B1968424A002278EB /* TestSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSystem.h; sourceTree = "<group>"; };
+		145AE32C1968424A002278EB /* ECSManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ECSManager.cpp; sourceTree = "<group>"; };
+		145AE32D1968424A002278EB /* ECSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSManager.h; sourceTree = "<group>"; };
+		145AE32E1968424A002278EB /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		145AE32F1968424A002278EB /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		145AE3301968424A002278EB /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = System.cpp; sourceTree = "<group>"; };
+		145AE3311968424A002278EB /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		145AE33A1968424A002278EB /* ComData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComData.cpp; sourceTree = "<group>"; };
+		145AE33B1968424A002278EB /* ComData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComData.h; sourceTree = "<group>"; };
+		145AE33C1968424A002278EB /* Resource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Resource.cpp; sourceTree = "<group>"; };
+		145AE33D1968424A002278EB /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		145AE33E1968424A002278EB /* ResourceCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceCache.cpp; sourceTree = "<group>"; };
+		145AE33F1968424A002278EB /* ResourceCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceCache.h; sourceTree = "<group>"; };
+		145AE3401968424A002278EB /* ResourceDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceDataDelegate.h; sourceTree = "<group>"; };
+		145AE3411968424A002278EB /* genius-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "genius-x.h"; sourceTree = "<group>"; };
+		145AE3431968424A002278EB /* GXMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMacros.h; sourceTree = "<group>"; };
+		145AE3561968424A002278EB /* Common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Common.cpp; sourceTree = "<group>"; };
+		145AE3571968424A002278EB /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		145AE3581968424A002278EB /* DataBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataBase.cpp; sourceTree = "<group>"; };
+		145AE3591968424A002278EB /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		145AE35A1968424A002278EB /* GameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameConfig.cpp; sourceTree = "<group>"; };
+		145AE35B1968424A002278EB /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		1463A19D196ADE0B00B0056E /* libcocos2dx-extensions iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx-extensions iOS.a"; path = "../../cocos2d/build/build/Debug-iphoneos/libcocos2dx-extensions iOS.a"; sourceTree = "<group>"; };
+		1463A1A1196AE9F600B0056E /* libcocos2dx Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx Mac.a"; path = "../../../../Library/Developer/Xcode/DerivedData/HelloGenius-eaaetkmtsfcrsxhbntfudrmebtep/Build/Products/Debug/libcocos2dx Mac.a"; sourceTree = "<group>"; };
+		147EF65919684097000D2E7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		147EF66719684097000D2E7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		147EF66A19684097000D2E7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		147EF69219684145000D2E7F /* libgeniusx iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgeniusx iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		147EF6B819684185000D2E7F /* libgeniusx Mac.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libgeniusx Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1493F21E1968474C00030B5B /* libcocos2dx Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx Mac.a"; path = "../../cocos2d/build/build/Debug/libcocos2dx Mac.a"; sourceTree = "<group>"; };
+		1493F2201968485000030B5B /* libcocos2dx-extensions Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx-extensions Mac.a"; path = "../../cocos2d/build/build/Debug/libcocos2dx-extensions Mac.a"; sourceTree = "<group>"; };
+		1493F222196848F700030B5B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		1493F2241968493100030B5B /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../cocos2d/external/glfw3/prebuilt/mac/libglfw3.a; sourceTree = "<group>"; };
+		14AC9490196B5CC40039CCA3 /* FTUE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FTUE.cpp; path = ../GameSystem/FTUE.cpp; sourceTree = "<group>"; };
+		14AC9491196B5CC40039CCA3 /* FTUE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTUE.h; path = ../GameSystem/FTUE.h; sourceTree = "<group>"; };
+		14AC9492196B5CC40039CCA3 /* GameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSystem.cpp; path = ../GameSystem/GameSystem.cpp; sourceTree = "<group>"; };
+		14AC9493196B5CC40039CCA3 /* GameSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSystem.h; path = ../GameSystem/GameSystem.h; sourceTree = "<group>"; };
+		14AC9494196B5CC40039CCA3 /* HttpBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HttpBase.cpp; path = ../GameSystem/HttpBase.cpp; sourceTree = "<group>"; };
+		14AC9495196B5CC40039CCA3 /* HttpBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpBase.h; path = ../GameSystem/HttpBase.h; sourceTree = "<group>"; };
+		14AC9496196B5CC40039CCA3 /* Localization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Localization.cpp; path = ../GameSystem/Localization.cpp; sourceTree = "<group>"; };
+		14AC9497196B5CC40039CCA3 /* Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Localization.h; path = ../GameSystem/Localization.h; sourceTree = "<group>"; };
+		14AC9498196B5CC40039CCA3 /* MessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MessageBox.cpp; path = ../GameSystem/MessageBox.cpp; sourceTree = "<group>"; };
+		14AC9499196B5CC40039CCA3 /* MessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageBox.h; path = ../GameSystem/MessageBox.h; sourceTree = "<group>"; };
+		14AC949A196B5CC40039CCA3 /* Notification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Notification.cpp; path = ../GameSystem/Notification.cpp; sourceTree = "<group>"; };
+		14AC949B196B5CC40039CCA3 /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notification.h; path = ../GameSystem/Notification.h; sourceTree = "<group>"; };
+		14AC949C196B5CC40039CCA3 /* Statistics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Statistics.cpp; path = ../GameSystem/Statistics.cpp; sourceTree = "<group>"; };
+		14AC949D196B5CC40039CCA3 /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Statistics.h; path = ../GameSystem/Statistics.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147EF68F19684145000D2E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147EF6B519684185000D2E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1463A1A2196AE9F600B0056E /* libcocos2dx Mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145AE30F1968424A002278EB /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				145AE3411968424A002278EB /* genius-x.h */,
+				145AE3431968424A002278EB /* GXMacros.h */,
+				145AE3101968424A002278EB /* ECS */,
+				145AE3321968424A002278EB /* GUI */,
+				145AE3391968424A002278EB /* Resource */,
+				145AE3441968424A002278EB /* GameSystem */,
+				145AE3551968424A002278EB /* Utility */,
+			);
+			name = libs;
+			path = ../libs;
+			sourceTree = "<group>";
+		};
+		145AE3101968424A002278EB /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				145AE3111968424A002278EB /* Com.cpp */,
+				145AE3121968424A002278EB /* Com.h */,
+				145AE3131968424A002278EB /* Common */,
+				145AE32C1968424A002278EB /* ECSManager.cpp */,
+				145AE32D1968424A002278EB /* ECSManager.h */,
+				145AE32E1968424A002278EB /* Entity.cpp */,
+				145AE32F1968424A002278EB /* Entity.h */,
+				145AE3301968424A002278EB /* System.cpp */,
+				145AE3311968424A002278EB /* System.h */,
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		145AE3131968424A002278EB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				145AE3141968424A002278EB /* Components */,
+				145AE3211968424A002278EB /* Systems */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		145AE3141968424A002278EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				145AE3151968424A002278EB /* AnimationCom.cpp */,
+				145AE3161968424A002278EB /* AnimationCom.h */,
+				145AE3171968424A002278EB /* DragCom.cpp */,
+				145AE3181968424A002278EB /* DragCom.h */,
+				145AE3191968424A002278EB /* EntityCom.cpp */,
+				145AE31A1968424A002278EB /* EntityCom.h */,
+				145AE31B1968424A002278EB /* NodeCom.cpp */,
+				145AE31C1968424A002278EB /* NodeCom.h */,
+				145AE31D1968424A002278EB /* ParticleCom.cpp */,
+				145AE31E1968424A002278EB /* ParticleCom.h */,
+				145AE31F1968424A002278EB /* TestCom.cpp */,
+				145AE3201968424A002278EB /* TestCom.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		145AE3211968424A002278EB /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				145AE3221968424A002278EB /* AnimationSystem.cpp */,
+				145AE3231968424A002278EB /* AnimationSystem.h */,
+				145AE3241968424A002278EB /* DragSystem.cpp */,
+				145AE3251968424A002278EB /* DragSystem.h */,
+				145AE3261968424A002278EB /* EntitySystem.cpp */,
+				145AE3271968424A002278EB /* EntitySystem.h */,
+				145AE3281968424A002278EB /* NodeSystem.cpp */,
+				145AE3291968424A002278EB /* NodeSystem.h */,
+				145AE32A1968424A002278EB /* TestSystem.cpp */,
+				145AE32B1968424A002278EB /* TestSystem.h */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		145AE3321968424A002278EB /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		145AE3391968424A002278EB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				145AE33A1968424A002278EB /* ComData.cpp */,
+				145AE33B1968424A002278EB /* ComData.h */,
+				145AE33C1968424A002278EB /* Resource.cpp */,
+				145AE33D1968424A002278EB /* Resource.h */,
+				145AE33E1968424A002278EB /* ResourceCache.cpp */,
+				145AE33F1968424A002278EB /* ResourceCache.h */,
+				145AE3401968424A002278EB /* ResourceDataDelegate.h */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		145AE3441968424A002278EB /* GameSystem */ = {
+			isa = PBXGroup;
+			children = (
+				14AC9490196B5CC40039CCA3 /* FTUE.cpp */,
+				14AC9491196B5CC40039CCA3 /* FTUE.h */,
+				14AC9492196B5CC40039CCA3 /* GameSystem.cpp */,
+				14AC9493196B5CC40039CCA3 /* GameSystem.h */,
+				14AC9494196B5CC40039CCA3 /* HttpBase.cpp */,
+				14AC9495196B5CC40039CCA3 /* HttpBase.h */,
+				14AC9496196B5CC40039CCA3 /* Localization.cpp */,
+				14AC9497196B5CC40039CCA3 /* Localization.h */,
+				14AC9498196B5CC40039CCA3 /* MessageBox.cpp */,
+				14AC9499196B5CC40039CCA3 /* MessageBox.h */,
+				14AC949A196B5CC40039CCA3 /* Notification.cpp */,
+				14AC949B196B5CC40039CCA3 /* Notification.h */,
+				14AC949C196B5CC40039CCA3 /* Statistics.cpp */,
+				14AC949D196B5CC40039CCA3 /* Statistics.h */,
+			);
+			name = GameSystem;
+			path = System;
+			sourceTree = "<group>";
+		};
+		145AE3551968424A002278EB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				145AE3561968424A002278EB /* Common.cpp */,
+				145AE3571968424A002278EB /* Common.h */,
+				145AE3581968424A002278EB /* DataBase.cpp */,
+				145AE3591968424A002278EB /* DataBase.h */,
+				145AE35A1968424A002278EB /* GameConfig.cpp */,
+				145AE35B1968424A002278EB /* GameConfig.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		147EF64D19684097000D2E7F = {
+			isa = PBXGroup;
+			children = (
+				145AE30F1968424A002278EB /* libs */,
+				147EF65819684097000D2E7F /* Frameworks */,
+				147EF65719684097000D2E7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		147EF65719684097000D2E7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147EF69219684145000D2E7F /* libgeniusx iOS.a */,
+				147EF6B819684185000D2E7F /* libgeniusx Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147EF65819684097000D2E7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1463A1A1196AE9F600B0056E /* libcocos2dx Mac.a */,
+				1463A19D196ADE0B00B0056E /* libcocos2dx-extensions iOS.a */,
+				1493F2241968493100030B5B /* libglfw3.a */,
+				1493F222196848F700030B5B /* OpenGL.framework */,
+				1493F2201968485000030B5B /* libcocos2dx-extensions Mac.a */,
+				1493F21E1968474C00030B5B /* libcocos2dx Mac.a */,
+				147EF65919684097000D2E7F /* Foundation.framework */,
+				147EF66719684097000D2E7F /* XCTest.framework */,
+				147EF66A19684097000D2E7F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		147EF6B619684185000D2E7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145AE3BB1968424A002278EB /* Common.h in Headers */,
+				14AC94AF196B5CC40039CCA3 /* Notification.h in Headers */,
+				145AE36E1968424A002278EB /* ParticleCom.h in Headers */,
+				145AE35F1968424A002278EB /* Com.h in Headers */,
+				145AE3711968424A002278EB /* TestCom.h in Headers */,
+				145AE39B1968424A002278EB /* ResourceCache.h in Headers */,
+				145AE3861968424A002278EB /* Entity.h in Headers */,
+				145AE37D1968424A002278EB /* NodeSystem.h in Headers */,
+				14AC94AC196B5CC40039CCA3 /* MessageBox.h in Headers */,
+				145AE3C11968424A002278EB /* GameConfig.h in Headers */,
+				14AC94A6196B5CC40039CCA3 /* HttpBase.h in Headers */,
+				145AE3771968424A002278EB /* DragSystem.h in Headers */,
+				145AE39D1968424A002278EB /* genius-x.h in Headers */,
+				145AE36B1968424A002278EB /* NodeCom.h in Headers */,
+				145AE3741968424A002278EB /* AnimationSystem.h in Headers */,
+				14AC94A3196B5CC40039CCA3 /* GameSystem.h in Headers */,
+				145AE3681968424A002278EB /* EntityCom.h in Headers */,
+				14AC94A0196B5CC40039CCA3 /* FTUE.h in Headers */,
+				145AE3621968424A002278EB /* AnimationCom.h in Headers */,
+				145AE37A1968424A002278EB /* EntitySystem.h in Headers */,
+				14AC94B2196B5CC40039CCA3 /* Statistics.h in Headers */,
+				145AE3981968424A002278EB /* Resource.h in Headers */,
+				145AE3A01968424A002278EB /* GXMacros.h in Headers */,
+				145AE39C1968424A002278EB /* ResourceDataDelegate.h in Headers */,
+				14AC94A9196B5CC40039CCA3 /* Localization.h in Headers */,
+				145AE3831968424A002278EB /* ECSManager.h in Headers */,
+				145AE3651968424A002278EB /* DragCom.h in Headers */,
+				145AE3BE1968424A002278EB /* DataBase.h in Headers */,
+				145AE3801968424A002278EB /* TestSystem.h in Headers */,
+				145AE3891968424A002278EB /* System.h in Headers */,
+				145AE3951968424A002278EB /* ComData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		147EF69119684145000D2E7F /* geniusx iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147EF6AE19684145000D2E7F /* Build configuration list for PBXNativeTarget "geniusx iOS" */;
+			buildPhases = (
+				147EF68E19684145000D2E7F /* Sources */,
+				147EF68F19684145000D2E7F /* Frameworks */,
+				147EF69019684145000D2E7F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "geniusx iOS";
+			productName = "geniusx iOS";
+			productReference = 147EF69219684145000D2E7F /* libgeniusx iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		147EF6B719684185000D2E7F /* geniusx Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147EF6C219684185000D2E7F /* Build configuration list for PBXNativeTarget "geniusx Mac" */;
+			buildPhases = (
+				147EF6B419684185000D2E7F /* Sources */,
+				147EF6B519684185000D2E7F /* Frameworks */,
+				147EF6B619684185000D2E7F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "geniusx Mac";
+			productName = "geniusx Mac";
+			productReference = 147EF6B819684185000D2E7F /* libgeniusx Mac.a */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147EF64E19684097000D2E7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Soulgame;
+			};
+			buildConfigurationList = 147EF65119684097000D2E7F /* Build configuration list for PBXProject "genius-x" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 147EF64D19684097000D2E7F;
+			productRefGroup = 147EF65719684097000D2E7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147EF69119684145000D2E7F /* geniusx iOS */,
+				147EF6B719684185000D2E7F /* geniusx Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147EF68E19684145000D2E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145AE3871968424A002278EB /* System.cpp in Sources */,
+				145AE3961968424A002278EB /* Resource.cpp in Sources */,
+				145AE3601968424A002278EB /* AnimationCom.cpp in Sources */,
+				145AE3721968424A002278EB /* AnimationSystem.cpp in Sources */,
+				145AE3841968424A002278EB /* Entity.cpp in Sources */,
+				145AE3691968424A002278EB /* NodeCom.cpp in Sources */,
+				145AE3B91968424A002278EB /* Common.cpp in Sources */,
+				145AE3631968424A002278EB /* DragCom.cpp in Sources */,
+				14AC94A7196B5CC40039CCA3 /* Localization.cpp in Sources */,
+				145AE37B1968424A002278EB /* NodeSystem.cpp in Sources */,
+				145AE3811968424A002278EB /* ECSManager.cpp in Sources */,
+				145AE3991968424A002278EB /* ResourceCache.cpp in Sources */,
+				145AE3751968424A002278EB /* DragSystem.cpp in Sources */,
+				145AE3BC1968424A002278EB /* DataBase.cpp in Sources */,
+				14AC94A1196B5CC40039CCA3 /* GameSystem.cpp in Sources */,
+				145AE36C1968424A002278EB /* ParticleCom.cpp in Sources */,
+				14AC94A4196B5CC40039CCA3 /* HttpBase.cpp in Sources */,
+				145AE3BF1968424A002278EB /* GameConfig.cpp in Sources */,
+				14AC94AA196B5CC40039CCA3 /* MessageBox.cpp in Sources */,
+				145AE3661968424A002278EB /* EntityCom.cpp in Sources */,
+				145AE3931968424A002278EB /* ComData.cpp in Sources */,
+				145AE37E1968424A002278EB /* TestSystem.cpp in Sources */,
+				145AE35D1968424A002278EB /* Com.cpp in Sources */,
+				14AC94AD196B5CC40039CCA3 /* Notification.cpp in Sources */,
+				145AE36F1968424A002278EB /* TestCom.cpp in Sources */,
+				14AC949E196B5CC40039CCA3 /* FTUE.cpp in Sources */,
+				145AE3781968424A002278EB /* EntitySystem.cpp in Sources */,
+				14AC94B0196B5CC40039CCA3 /* Statistics.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147EF6B419684185000D2E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145AE3881968424A002278EB /* System.cpp in Sources */,
+				145AE3971968424A002278EB /* Resource.cpp in Sources */,
+				145AE3611968424A002278EB /* AnimationCom.cpp in Sources */,
+				145AE3731968424A002278EB /* AnimationSystem.cpp in Sources */,
+				145AE3851968424A002278EB /* Entity.cpp in Sources */,
+				145AE36A1968424A002278EB /* NodeCom.cpp in Sources */,
+				145AE3BA1968424A002278EB /* Common.cpp in Sources */,
+				145AE3641968424A002278EB /* DragCom.cpp in Sources */,
+				14AC94A8196B5CC40039CCA3 /* Localization.cpp in Sources */,
+				145AE37C1968424A002278EB /* NodeSystem.cpp in Sources */,
+				145AE3821968424A002278EB /* ECSManager.cpp in Sources */,
+				145AE39A1968424A002278EB /* ResourceCache.cpp in Sources */,
+				145AE3761968424A002278EB /* DragSystem.cpp in Sources */,
+				145AE3BD1968424A002278EB /* DataBase.cpp in Sources */,
+				14AC94A2196B5CC40039CCA3 /* GameSystem.cpp in Sources */,
+				145AE36D1968424A002278EB /* ParticleCom.cpp in Sources */,
+				14AC94A5196B5CC40039CCA3 /* HttpBase.cpp in Sources */,
+				145AE3C01968424A002278EB /* GameConfig.cpp in Sources */,
+				14AC94AB196B5CC40039CCA3 /* MessageBox.cpp in Sources */,
+				145AE3671968424A002278EB /* EntityCom.cpp in Sources */,
+				145AE3941968424A002278EB /* ComData.cpp in Sources */,
+				145AE37F1968424A002278EB /* TestSystem.cpp in Sources */,
+				145AE35E1968424A002278EB /* Com.cpp in Sources */,
+				14AC94AE196B5CC40039CCA3 /* Notification.cpp in Sources */,
+				145AE3701968424A002278EB /* TestCom.cpp in Sources */,
+				14AC949F196B5CC40039CCA3 /* FTUE.cpp in Sources */,
+				145AE3791968424A002278EB /* EntitySystem.cpp in Sources */,
+				14AC94B1196B5CC40039CCA3 /* Statistics.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		147EF67719684097000D2E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d $(SRCROOT)/../.. $(SRCROOT)/../../cocos2d/cocos $(SRCROOT)/../../cocos2d/cocos/base $(SRCROOT)/../../cocos2d/cocos/2d $(SRCROOT)/../../cocos2d/cocos/deprecated $(SRCROOT)/../../cocos2d/cocos/physics $(SRCROOT)/../../cocos2d/cocos/math/kazmath $(SRCROOT)/../../cocos2d/cocos/2d/platform $(SRCROOT)/../../cocos2d/cocos/audio/include $(SRCROOT)/../../cocos2d/cocos/editor-support $(SRCROOT)/../../cocos2d/cocos/editor-support/spine $(SRCROOT)/../../cocos2d/cocos/editor-support/cocostudio $(SRCROOT)/../../cocos2d/cocos/editor-support/cocosbuilder $(SRCROOT)/../../cocos2d/cocos/ui $(SRCROOT)/../../cocos2d/cocos/storage $(SRCROOT)/../../cocos2d/extensions/GUI/CCScrollView $(SRCROOT)/../../cocos2d/extensions $(SRCROOT)/../../cocos2d/external $(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d/external/lua $(SRCROOT)/../../cocos2d/external/lua/luajit/include $(SRCROOT)/../../cocos2d/external/lua/tolua";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		147EF67819684097000D2E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					NDEBUG,
+					USE_FILE32API,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d $(SRCROOT)/../.. $(SRCROOT)/../../cocos2d/cocos $(SRCROOT)/../../cocos2d/cocos/base $(SRCROOT)/../../cocos2d/cocos/2d $(SRCROOT)/../../cocos2d/cocos/deprecated $(SRCROOT)/../../cocos2d/cocos/physics $(SRCROOT)/../../cocos2d/cocos/math/kazmath $(SRCROOT)/../../cocos2d/cocos/2d/platform $(SRCROOT)/../../cocos2d/cocos/audio/include $(SRCROOT)/../../cocos2d/cocos/editor-support $(SRCROOT)/../../cocos2d/cocos/editor-support/spine $(SRCROOT)/../../cocos2d/cocos/editor-support/cocostudio $(SRCROOT)/../../cocos2d/cocos/editor-support/cocosbuilder $(SRCROOT)/../../cocos2d/cocos/ui $(SRCROOT)/../../cocos2d/cocos/storage $(SRCROOT)/../../cocos2d/extensions/GUI/CCScrollView $(SRCROOT)/../../cocos2d/extensions $(SRCROOT)/../../cocos2d/external $(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d/external/lua $(SRCROOT)/../../cocos2d/external/lua/luajit/include $(SRCROOT)/../../cocos2d/external/lua/tolua";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		147EF6AF19684145000D2E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				DSTROOT = /tmp/geniusx_iOS.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "geniusx iOS/geniusx iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../cocos2d/external/png/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/jpeg/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/tiff/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/webp/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/freetype2/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/websockets/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/curl/prebuilt/ios\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lcurl_arm64",
+					"-ljpeg_arm64",
+					"-lpng_arm64",
+					"-ltiff_arm64",
+					"-lwebp_arm64",
+					"-lwebsockets_arm64",
+					"-lfreetype_arm64",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d/cocos/platform/ios";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		147EF6B019684145000D2E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				DSTROOT = /tmp/geniusx_iOS.dst;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "geniusx iOS/geniusx iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../cocos2d/external/png/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/jpeg/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/tiff/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/webp/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/freetype2/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/websockets/prebuilt/ios\"",
+					"\"$(SRCROOT)/../../cocos2d//external/curl/prebuilt/ios\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lcurl_arm64",
+					"-ljpeg_arm64",
+					"-lpng_arm64",
+					"-ltiff_arm64",
+					"-lwebp_arm64",
+					"-lwebsockets_arm64",
+					"-lfreetype_arm64",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d/cocos/platform/ios";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		147EF6C319684185000D2E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_MAC,
+					CC_KEYBOARD_SUPPORT,
+				);
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/elvis/Desktop/HelloGenius/cocos2d/build/build/Debug,
+					/Users/elvis/Desktop/HelloGenius/cocos2d/external/glfw3/prebuilt/mac,
+					"/Users/elvis/Desktop/HelloGenius/cocos2d/build/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/HelloGenius-eaaetkmtsfcrsxhbntfudrmebtep/Build/Products/Debug",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SEPARATE_STRIP = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d/cocos/platform/mac $(SRCROOT)/../../cocos2d/external/glfw3/include/mac";
+			};
+			name = Debug;
+		};
+		147EF6C419684185000D2E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_MAC,
+					CC_KEYBOARD_SUPPORT,
+				);
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/elvis/Desktop/HelloGenius/cocos2d/build/build/Debug,
+					/Users/elvis/Desktop/HelloGenius/cocos2d/external/glfw3/prebuilt/mac,
+					"/Users/elvis/Desktop/HelloGenius/cocos2d/build/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/HelloGenius-eaaetkmtsfcrsxhbntfudrmebtep/Build/Products/Debug",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SEPARATE_STRIP = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d/cocos/platform/mac $(SRCROOT)/../../cocos2d/external/glfw3/include/mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147EF65119684097000D2E7F /* Build configuration list for PBXProject "genius-x" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147EF67719684097000D2E7F /* Debug */,
+				147EF67819684097000D2E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147EF6AE19684145000D2E7F /* Build configuration list for PBXNativeTarget "geniusx iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147EF6AF19684145000D2E7F /* Debug */,
+				147EF6B019684145000D2E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147EF6C219684185000D2E7F /* Build configuration list for PBXNativeTarget "geniusx Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147EF6C319684185000D2E7F /* Debug */,
+				147EF6C419684185000D2E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147EF64E19684097000D2E7F /* Project object */;
+}
