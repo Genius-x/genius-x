@@ -1,0 +1,39 @@
+[
+  {
+    "type": "NodeCom",
+    "secondType": "10",
+    "Node": [
+      {
+        "type": "Sprite",
+        "filename": "images/logo_studio.png",
+        "anchor": "{0.5,0.5}",
+        "anchorPoint": "{0.5,0.5}",
+        "position": "{0,120}",
+        "name": "logo"
+      },
+      {
+        "type": "Button",
+        "name": "play",
+        "anchor": "{0.5,0.5}",
+        "position": "{-150,-250}",
+        "titleText": "Play",
+        "titleFont": "DFLiJinHeiW8-GB.ttf",
+        "titleSize": 50,
+        "normal": "images/button.png"
+      },
+      {
+        "type": "Button",
+        "name": "shop",
+        "anchor": "{0.5,0.5}",
+        "position": "{150,-250}",
+        "titleText": "Shop",
+        "titleFont": "DFLiJinHeiW8-GB.ttf",
+        "titleSize": 50,
+        "normal": "images/button.png"
+      }
+    ]
+  },
+  {
+    "type": "WelcomeCom"
+  }
+]

@@ -1,0 +1,31 @@
+ [
+  {
+  "type": "NodeCom",
+  "secondType": "10",
+  "contentSize": "{300,500}",
+  "Node": [
+           {
+           "type": "Sprite",
+           "name": "image",
+           "anchorPoint": "{0.0,0.0}",
+           "position": "{0,0}"
+           },
+           {
+           "type": "Label",
+           "name": "title",
+           "font": "DFLiJinHeiW8-GB.ttf",
+           "fontSize": 20,
+           "anchorPoint": "{0.5,0.5}",
+           "position": "{150,300}"
+           },
+           {
+           "type": "Label",
+           "font": "DFLiJinHeiW8-GB.ttf",
+           "name": "description",
+           "fontSize": 20,
+           "anchorPoint": "{0.5,0.5}",
+           "position": "{150,50}"
+           }
+           ]
+  }
+  ]

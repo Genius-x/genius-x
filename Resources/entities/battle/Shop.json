@@ -1,0 +1,69 @@
+[
+  {
+    "type": "NodeCom",
+    "secondType": "10",
+    "Node": [
+    ]
+  },
+  {
+    "type": "ShopCom",
+    "viewSize": "{1024,80}",
+    "cellSize": "{185,80}",
+    "position": "{17,0}",
+    "anchorPoint": "{0,1}",
+    "data": [
+      {
+        "name": "超级火箭",
+        "filename": "images/unit3.png",
+        "bullet_image": "images/gun1.png",
+        "bullet_hp": 50,
+        "bullet_rate": 2,
+        "bullet_speed": 500,
+        "price": 500,
+        "hp": 400,
+        "coin": 20,
+        "coin_rate": 5
+      },
+      {
+        "name": "普通火箭",
+        "filename": "images/unit2.png",
+        "bullet_image": "images/gun2.png",
+        "bullet_hp": 50,
+        "bullet_rate": 2,
+        "bullet_speed": 400,
+        "price": 400,
+        "hp": 300,
+        "coin": 20,
+        "coin_rate": 5
+      },
+      {
+        "name": "转头",
+        "filename": "images/unit1.png",
+        "price": 300,
+        "hp": 200,
+        "coin": 20,
+        "coin_rate": 5
+      },
+      {
+        "name": "普通转头",
+        "filename": "images/unit4.png",
+        "price": 100,
+        "hp": 100,
+        "coin": 20,
+        "coin_rate": 5
+      },
+      {
+        "name": "超级火箭",
+        "filename": "images/unit5.png",
+        "bullet_image": "images/gun1.png",
+        "bullet_hp": 50,
+        "bullet_speed": 300,
+        "bullet_rate": 2,
+        "price": 500,
+        "hp": 400,
+        "coin": 20,
+        "coin_rate": 5
+      }
+    ]
+  }
+]

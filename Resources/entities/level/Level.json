@@ -1,0 +1,54 @@
+ [
+  {
+  "type": "NodeCom",
+  "secondType": "10",
+  "Node": [
+  ]
+  },
+  {
+  "type": "LevelCom",
+  "viewSize": "{1024,500}",
+  "cellSize": "{300,500}",
+  "position": "{0,250}",
+  "anchorPoint": "{0.5,0.5}",
+  "anchor": "{0.5,0.5}",
+  "data": [
+           {
+           "entity": "Level1.json",
+           "title": "Level 1",
+           "description": "这关很难哦",
+           "image": "images/a_item_bg.png"
+           },
+           {
+           "entity": "level2.json",
+           "title": "Level 2",
+           "description": "这关很难哦",
+           "image": "images/a_item_bg.png"
+           },
+           {
+           "entity": "entities/level/level3.json",
+           "title": "Level 3",
+           "description": "这关很难哦",
+           "image": "images/a_item_bg.png"
+           },
+           {
+           "entity": "entities/level/level4.json",
+           "title": "Level 4",
+           "description": "这关很难哦",
+           "image": "images/a_item_bg.png"
+           },
+           {
+           "entity": "entities/level/level5.json",
+           "title": "Level 5",
+           "description": "这关很难哦",
+           "image": "images/a_item_bg.png"
+           },
+           {
+           "entity": "entities/level/level6.json",
+           "title": "Level 6",
+           "description": "这关很难哦",
+           "image": "images/a_item_bg.png"
+           }
+           ]
+  }
+  ]

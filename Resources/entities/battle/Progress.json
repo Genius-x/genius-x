@@ -1,0 +1,40 @@
+[
+  {
+    "type": "NodeCom",
+    "secondType": "10",
+    "contentSize": "{1000,50}",
+    "anchorPoint": "{0,1}",
+    "position": "{20,720}",
+    "Node": [
+      {
+        "type": "ProgressTimer",
+        "name": "progress",
+        "anchorPoint": "{0,0}",
+        "position": "{0,30}",
+        "filename": "images/progress.png"
+      },
+      {
+        "type": "Button",
+        "name": "pause",
+        "normal": "images/pause.png",
+        "titleText": "暂停",
+        "titleFont": "DFLiJinHeiW8-GB.ttf",
+        "titleSize": 40,
+        "position": "{50,25}",
+        "anchorPoint": "{0.5,0.5}"
+      },
+      {
+        "type": "Label",
+        "name": "timer",
+        "font": "DFLiJinHeiW8-GB.ttf",
+        "fontSize": 40,
+        "text": "100s",
+        "anchorPoint": "{0.5,0.5}",
+        "position": "{500,45}"
+      }
+    ]
+  },
+  {
+    "type": "ProgressCom"
+  }
+]

@@ -1,0 +1,312 @@
+ [
+  {
+  "type": "LevelDataCom",
+  "ship_image": "images/ship.png",
+  "durence": 120,
+  "ship_hp": 50000,
+  "ship_coin": 50,
+  "ship_coin_rate": 5,
+  "data": [
+           {
+           "name": "phase1",
+           "durence": 10
+           },
+           {
+           "name": "phase1",
+           "durence": 30,
+           "monsters": [
+                        {
+                        "filename": "images/ghost1.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost2.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost3.png",
+                        "speed": 100,
+                        "coins": 10
+                        },
+                        {
+                        "filename": "images/ghost4.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost5.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 250
+                        },
+                        {
+                        "filename": "images/ghost6.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost7.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost8.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 250
+                        },
+                        {
+                        "filename": "images/ghost9.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost10.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 5,
+                        "bullet_speed": 250
+                        },
+                        {
+                        "filename": "images/ghost11.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost12.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost13.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 250
+                        },
+                        {
+                        "filename": "images/ghost14.png",
+                        "coins": 10,
+                        "speed": 100
+                        }
+                        ]
+           },
+           {
+           "name": "phase1",
+           "durence": 20
+           },
+           {
+           "name": "phase1",
+           "durence": 20,
+           "monsters": [
+                        {
+                        "filename": "images/ghost1.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost2.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 250
+                        },
+                        {
+                        "filename": "images/ghost3.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost4.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost5.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 5,
+                        "bullet_speed": 250
+                        },
+                        {
+                        "filename": "images/ghost6.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost7.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost8.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 250
+                        },
+                        {
+                        "filename": "images/ghost9.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost10.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 2,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost11.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost12.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost13.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 5,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost14.png",
+                        "coins": 10,
+                        "speed": 100
+                        }
+                        ]
+           },
+           {
+           "name": "phase1",
+           "durence": 10
+           },
+           {
+           "name": "phase1",
+           "durence": 30,
+           "monsters": [
+                        {
+                        "filename": "images/ghost1.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost2.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 2,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost3.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost4.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost5.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost6.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost7.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost8.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost9.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost10.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost11.png",
+                        "coins": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost12.png",
+                        "hp": 10,
+                        "speed": 100
+                        },
+                        {
+                        "filename": "images/ghost13.png",
+                        "hp": 10,
+                        "speed": 100,
+                        "bullet_image": "images/gun1.png",
+                        "bullet_hp": 3,
+                        "bullet_rate": 1,
+                        "bullet_speed": 200
+                        },
+                        {
+                        "filename": "images/ghost14.png",
+                        "coins": 10,
+                        "speed": 100
+                        }
+                        ]
+           }
+           ]
+  }
+  ]

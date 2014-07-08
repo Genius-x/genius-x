@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>about</key>
+	<dict>
+		<key>app</key>
+		<string>SpriteHelper</string>
+		<key>author</key>
+		<string>Vladu Bogdan</string>
+		<key>web</key>
+		<string>http://www.gamedevhelper.com</string>
+	</dict>
+	<key>animations</key>
+	<dict>
+		<key>black</key>
+		<dict>
+			<key>delayPerUnit</key>
+			<real>0.10000000149011612</real>
+			<key>frames</key>
+			<array>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00009.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00001.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00020.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00018.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00010.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00002.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00015.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00014.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00021.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00004.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00023.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00011.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00016.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00013.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00003.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00012.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00024.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00022.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00019.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00005.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00006.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00007.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00017.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_card_heiqiliaorao_ani_00008.png</string>
+				</dict>
+			</array>
+			<key>loop</key>
+			<false/>
+			<key>loops</key>
+			<integer>1</integer>
+			<key>maxRandomTime</key>
+			<real>0.10000000149011612</real>
+			<key>minRandomTime</key>
+			<real>0.10000000149011612</real>
+			<key>randomFrames</key>
+			<false/>
+			<key>randomReplay</key>
+			<false/>
+			<key>restoreOriginalFrame</key>
+			<false/>
+		</dict>
+		<key>change</key>
+		<dict>
+			<key>delayPerUnit</key>
+			<real>0.10000000149011612</real>
+			<key>frames</key>
+			<array>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00001.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00001_1.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00002.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00003.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00004.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00005.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00006.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00007.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00008.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00009.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00010.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00011.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00012.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00013.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00014.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00015.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00016.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00017.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00018.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00019.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00020.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00021.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00022.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00023.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00024.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00025.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00026.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00027.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00028.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00029.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00030.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00031.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00032.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00033.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00034.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00035.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00036.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00037.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00038.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00039.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00040.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00041.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00042.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00043.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00044.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00045.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00046.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00047.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00048.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00049.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00050.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00051.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00052.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00053.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00054.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00055.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00056.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00057.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00058.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00059.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00060.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00061.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00062.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00063.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00064.png</string>
+				</dict>
+				<dict>
+					<key>delayUnits</key>
+					<real>1</real>
+					<key>notification</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>f_tianjiangbianshen_ani_00065.png</string>
+				</dict>
+			</array>
+			<key>loop</key>
+			<false/>
+			<key>loops</key>
+			<integer>1</integer>
+			<key>maxRandomTime</key>
+			<real>0.10000000149011612</real>
+			<key>minRandomTime</key>
+			<real>0.10000000149011612</real>
+			<key>randomFrames</key>
+			<false/>
+			<key>randomReplay</key>
+			<false/>
+			<key>restoreOriginalFrame</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>properties</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>spritesheets</key>
+		<array>
+			<string>woc_change_1.plist</string>
+			<string>woc_black_1.plist</string>
+		</array>
+	</dict>
+</dict>
+</plist>

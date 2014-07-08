@@ -1,0 +1,11 @@
+[
+  {
+    "type": "TestCom",
+    "testInt": 10,
+    "testFloat": 9.99,
+    "testString": "HelloWorld",
+    "testData": {
+      "lalala": 100
+    }
+  }
+]

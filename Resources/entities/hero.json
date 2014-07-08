@@ -1,0 +1,74 @@
+[
+  {
+    "type": "NodeCom",
+    "secondType": "10",
+    "contentSize": "{520,760}",
+    "anchorPoint": "{0.5,0.5}",
+    "position": "{500,350}",
+    "Node": [
+      {
+        "type": "Label",
+        "name": "title",
+        "localZOrder": 2,
+        "position": "{260,240}",
+        "anchorPoint": "{0.5,0.5}",
+        "font": "DFLiJinHeiW8-GB.ttf",
+        "fontSize": 30,
+        "text": "驱使恶灵"
+      },
+      {
+        "type": "Label",
+        "name": "description",
+        "localZOrder": 2,
+        "position": "{260,140}",
+        "anchorPoint": "{0.5,0.5}",
+        "font": "DFLiJinHeiW8-GB.ttf",
+        "fontSize": 30,
+        "text": "大家好，我是驱使恶灵",
+        "visible": true
+      },
+      {
+        "type": "Sprite",
+        "filename": "a_cardUI_big_1_2.png",
+        "localZOrder": 1,
+        "position": "{0,0}",
+        "anchorPoint": "{0.0,0.0}",
+        "scale": "{1.0,1.0}",
+        "rotation": 30
+      },
+      {
+        "type": "Sprite",
+        "filename": "a_hero_pic_044_big.jpg",
+        "localZOrder": 0,
+        "position": "{70,650}",
+        "anchorPoint": "{0.0,1.0}",
+        "scale": "{0.5,0.5}"
+      }
+    ]
+  },
+  {
+    "type": "AnimationCom",
+    "filename": "animations/woc_change_black.plist",
+    "animations": [
+      {
+        "name": "change",
+        "position": "{300,400}",
+        "anchorPoint": "{0.5,0.5}",
+        "localZOrder": 3,
+        "scale": "{2,2}",
+        "loops": 0,
+        "autoPlay": true,
+        "delayPerUnit": 0
+      },
+      {
+        "name": "black",
+        "position": "{200,300}",
+        "anchorPoint": "{0.5,0.5}",
+        "localZOrder": 3,
+        "loops": 0,
+        "autoPlay": false,
+        "delayPerUnit": 0
+      }
+    ]
+  }
+]

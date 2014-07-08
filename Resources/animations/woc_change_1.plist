@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>about</key>
+	<dict>
+		<key>app</key>
+		<string>SpriteHelper</string>
+		<key>author</key>
+		<string>Vladu Bogdan</string>
+		<key>web</key>
+		<string>http://www.gamedevhelper.com</string>
+	</dict>
+	<key>frames</key>
+	<dict>
+		<key>f_tianjiangbianshen_ani_00001.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{231, 521}, {63, 83}}</string>
+			<key>offset</key>
+			<string>{0, 18.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{127, 81}, {83, 63}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00001_1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{318, 521}, {63, 83}}</string>
+			<key>offset</key>
+			<string>{0, 18.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{127, 81}, {83, 63}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00002.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{671, 1057}, {109, 158}}</string>
+			<key>offset</key>
+			<string>{0, 19}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{90, 58}, {158, 109}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00003.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1058, 1857}, {151, 229}}</string>
+			<key>offset</key>
+			<string>{0, 19.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{55, 37}, {229, 151}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00004.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1642, 2}, {193, 275}}</string>
+			<key>offset</key>
+			<string>{0, 12.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{25, 16}, {275, 193}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00005.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 910}, {225, 291}}</string>
+			<key>offset</key>
+			<string>{0, 4.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {225, 291}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00006.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{427, 1202}, {225, 275}}</string>
+			<key>offset</key>
+			<string>{0, 12.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {225, 275}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00007.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{657, 1452}, {221, 269}}</string>
+			<key>offset</key>
+			<string>{0, 15.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{2, 0}, {221, 269}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00008.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{882, 1323}, {211, 263}}</string>
+			<key>offset</key>
+			<string>{0, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {211, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00009.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1058, 1590}, {211, 263}}</string>
+			<key>offset</key>
+			<string>{0, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {211, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00010.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1316, 975}, {210, 262}}</string>
+			<key>offset</key>
+			<string>{-0.5, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {210, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00011.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{454, 521}, {220, 262}}</string>
+			<key>offset</key>
+			<string>{-2.5, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {220, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00012.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{810, 270}, {217, 262}}</string>
+			<key>offset</key>
+			<string>{-4, 19}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{38, 0}, {262, 217}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00013.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{881, 2}, {217, 262}}</string>
+			<key>offset</key>
+			<string>{-4, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {217, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00014.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{881, 1057}, {217, 262}}</string>
+			<key>offset</key>
+			<string>{-4, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {217, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00015.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1076, 268}, {212, 262}}</string>
+			<key>offset</key>
+			<string>{-1.5, 19}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{38, 5}, {262, 212}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00016.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1743, 962}, {209, 262}}</string>
+			<key>offset</key>
+			<string>{0, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {209, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00017.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1796, 1228}, {209, 262}}</string>
+			<key>offset</key>
+			<string>{0, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {209, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00018.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1745, 695}, {209, 262}}</string>
+			<key>offset</key>
+			<string>{0, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {209, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00019.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1755, 481}, {209, 262}}</string>
+			<key>offset</key>
+			<string>{0, 19}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{38, 8}, {262, 209}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00020.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1768, 199}, {209, 262}}</string>
+			<key>offset</key>
+			<string>{0, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {209, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00021.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1106, 707}, {209, 264}}</string>
+			<key>offset</key>
+			<string>{-1, 18}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {209, 264}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00022.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{953, 491}, {212, 263}}</string>
+			<key>offset</key>
+			<string>{2.5, 18.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{37, 9}, {263, 212}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00023.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{610, 1755}, {218, 276}}</string>
+			<key>offset</key>
+			<string>{-3.5, 12}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {218, 276}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00024.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{656, 1176}, {221, 272}}</string>
+			<key>offset</key>
+			<string>{-2, 14}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {221, 272}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00025.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{671, 787}, {214, 266}}</string>
+			<key>offset</key>
+			<string>{-2.5, 17}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{3, 0}, {214, 266}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00026.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{660, 2}, {217, 264}}</string>
+			<key>offset</key>
+			<string>{-3, 18}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 0}, {217, 264}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00027.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1319, 697}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{0, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {209, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00028.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1273, 1534}, {210, 263}}</string>
+			<key>offset</key>
+			<string>{-0.5, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {210, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00029.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1369, 1241}, {210, 262}}</string>
+			<key>offset</key>
+			<string>{0.5, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {210, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00030.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{678, 521}, {210, 271}}</string>
+			<key>offset</key>
+			<string>{0.5, 14.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{29, 8}, {271, 210}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00031.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1488, 482}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{1, 18.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{37, 9}, {263, 209}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00032.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1555, 214}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{1, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {209, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00033.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1530, 964}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{1, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {209, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00034.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{889, 735}, {213, 265}}</string>
+			<key>offset</key>
+			<string>{1, 17.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {213, 265}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00035.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{535, 306}, {211, 271}}</string>
+			<key>offset</key>
+			<string>{2, 14.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{29, 9}, {271, 211}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00036.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1097, 1323}, {207, 268}}</string>
+			<key>offset</key>
+			<string>{2, 16}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{32, 11}, {268, 207}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00037.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1102, 2}, {208, 267}}</string>
+			<key>offset</key>
+			<string>{0.5, 16.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{33, 9}, {267, 208}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00038.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1373, 2}, {208, 265}}</string>
+			<key>offset</key>
+			<string>{-0.5, 17.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{35, 8}, {265, 208}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00039.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1220, 484}, {209, 264}}</string>
+			<key>offset</key>
+			<string>{-1, 18}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{36, 7}, {264, 209}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00040.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1583, 1231}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{-1, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {209, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00041.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1291, 1801}, {210, 263}}</string>
+			<key>offset</key>
+			<string>{-0.5, 18.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{37, 7}, {263, 210}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00042.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1102, 1004}, {210, 263}}</string>
+			<key>offset</key>
+			<string>{-0.5, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {210, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00043.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1487, 1507}, {210, 262}}</string>
+			<key>offset</key>
+			<string>{0.5, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {210, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00044.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1558, 1773}, {210, 262}}</string>
+			<key>offset</key>
+			<string>{0.5, 19}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {210, 262}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00045.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1701, 1498}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{1, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {209, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00046.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1772, 1765}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{1, 18.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{37, 9}, {263, 209}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00047.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1532, 695}, {209, 263}}</string>
+			<key>offset</key>
+			<string>{1, 18.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {209, 263}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00048.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1342, 214}, {209, 264}}</string>
+			<key>offset</key>
+			<string>{1, 18}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {209, 264}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00049.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{446, 2}, {210, 300}}</string>
+			<key>offset</key>
+			<string>{0.5, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{8, 0}, {210, 300}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00050.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{231, 2}, {211, 300}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {211, 300}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00051.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{231, 306}, {211, 300}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 6}, {300, 211}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00052.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 1205}, {210, 300}}</string>
+			<key>offset</key>
+			<string>{-0.5, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {210, 300}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00053.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 1509}, {209, 300}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {209, 300}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00054.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 1813}, {209, 300}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 7}, {300, 209}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00055.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{215, 1509}, {209, 300}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 0}, {209, 300}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00056.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{306, 1813}, {208, 300}}</string>
+			<key>offset</key>
+			<string>{-0.5, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 8}, {300, 208}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00057.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{216, 1205}, {207, 300}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {207, 300}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00058.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{231, 899}, {207, 299}}</string>
+			<key>offset</key>
+			<string>{0, -0.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 1}, {207, 299}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00059.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 607}, {219, 299}}</string>
+			<key>offset</key>
+			<string>{-1, -0.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{2, 1}, {219, 299}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00060.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 2}, {225, 299}}</string>
+			<key>offset</key>
+			<string>{0, -0.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 1}, {225, 299}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00061.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 305}, {225, 298}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 2}, {225, 298}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00062.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{225, 607}, {225, 288}}</string>
+			<key>offset</key>
+			<string>{0, 5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 1}, {225, 288}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00063.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{442, 899}, {225, 273}}</string>
+			<key>offset</key>
+			<string>{0, 13.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {225, 273}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00064.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{428, 1481}, {225, 270}}</string>
+			<key>offset</key>
+			<string>{0, 15}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {225, 270}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_tianjiangbianshen_ani_00065.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{832, 1725}, {222, 267}}</string>
+			<key>offset</key>
+			<string>{-1.5, 16.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {222, 267}}</string>
+			<key>sourceSize</key>
+			<string>{225, 300}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{2037, 2037}</string>
+		<key>textureFileName</key>
+		<string>woc_change_1.png</string>
+	</dict>
+</dict>
+</plist>

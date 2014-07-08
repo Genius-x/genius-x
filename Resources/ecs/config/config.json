@@ -1,0 +1,10 @@
+{
+  "dbname": "database.db",
+  "Debug.SocialServer": "http://203.195.193.227/tg_social/api_open.php",
+  "Debug.PlatformServer": "http://platform.soulgame.co/api_open.php",
+  "Debug.GameServer": "http://203.195.193.227/game_woc/api_open.php",
+  "Release.SocialServer": "http://203.195.193.227/tg_social/api_open.php",
+  "Release.PlatformServer": "http://platform.soulgame.co/api_open.php",
+  "Release.GameServer": "http://203.195.193.227/game_woc/api_open.php",
+  "test": "hello"
+}

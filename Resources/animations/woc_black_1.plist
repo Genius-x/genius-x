@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>about</key>
+	<dict>
+		<key>app</key>
+		<string>SpriteHelper</string>
+		<key>author</key>
+		<string>Vladu Bogdan</string>
+		<key>web</key>
+		<string>http://www.gamedevhelper.com</string>
+	</dict>
+	<key>frames</key>
+	<dict>
+		<key>f_card_heiqiliaorao_ani_00001.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{244, 1178}, {249, 215}}</string>
+			<key>offset</key>
+			<string>{6.5, 8}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{13, 6}, {249, 215}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00002.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{244, 1397}, {244, 217}}</string>
+			<key>offset</key>
+			<string>{3, 6}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{12, 7}, {244, 217}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00003.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 1886}, {234, 214}}</string>
+			<key>offset</key>
+			<string>{0, 4.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{19, 14}, {214, 234}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00004.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{222, 1841}, {231, 218}}</string>
+			<key>offset</key>
+			<string>{-1.5, 4.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{14, 8}, {231, 218}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00005.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{264, 262}, {243, 237}}</string>
+			<key>offset</key>
+			<string>{-5.5, -3}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{4, 6}, {243, 237}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00006.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 464}, {243, 234}}</string>
+			<key>offset</key>
+			<string>{-7.5, -4.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{2, 9}, {243, 234}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00007.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{248, 731}, {241, 227}}</string>
+			<key>offset</key>
+			<string>{-10.5, -8}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 16}, {241, 227}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00008.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 702}, {242, 230}}</string>
+			<key>offset</key>
+			<string>{-10, -6.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 13}, {242, 230}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00009.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 936}, {238, 229}}</string>
+			<key>offset</key>
+			<string>{-7, -7}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{5, 14}, {238, 229}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00010.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 1169}, {238, 225}}</string>
+			<key>offset</key>
+			<string>{-9, -9}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{3, 18}, {238, 225}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00011.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 1398}, {240, 220}}</string>
+			<key>offset</key>
+			<string>{-10, -11.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 1}, {220, 240}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00012.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{226, 1618}, {238, 219}}</string>
+			<key>offset</key>
+			<string>{-12, -12}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 24}, {238, 219}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00013.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{220, 2063}, {229, 216}}</string>
+			<key>offset</key>
+			<string>{-9.5, -13.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{7, 27}, {229, 216}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00014.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{213, 2283}, {222, 210}}</string>
+			<key>offset</key>
+			<string>{-11, -10.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 27}, {222, 210}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00015.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{202, 2497}, {225, 198}}</string>
+			<key>offset</key>
+			<string>{-14.5, -4.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{4, 27}, {225, 198}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00016.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 2594}, {222, 195}}</string>
+			<key>offset</key>
+			<string>{-13, -6}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{18, 7}, {195, 222}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00017.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 2358}, {232, 196}}</string>
+			<key>offset</key>
+			<string>{0, -5.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{18, 15}, {196, 232}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00018.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 2124}, {230, 207}}</string>
+			<key>offset</key>
+			<string>{13, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{17, 29}, {207, 230}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00019.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 1642}, {240, 216}}</string>
+			<key>offset</key>
+			<string>{11, 4.5}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{18, 22}, {216, 240}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00020.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{249, 503}, {250, 224}}</string>
+			<key>offset</key>
+			<string>{6, 6.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{12, 3}, {250, 224}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00021.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{264, 2}, {256, 227}}</string>
+			<key>offset</key>
+			<string>{3, 7}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{15, 6}, {227, 256}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00022.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 2}, {258, 230}}</string>
+			<key>offset</key>
+			<string>{2, 6.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{4, 0}, {258, 230}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00023.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{2, 236}, {258, 224}}</string>
+			<key>offset</key>
+			<string>{0, 7.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{2, 2}, {258, 224}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+		<key>f_card_heiqiliaorao_ani_00024.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{244, 962}, {253, 212}}</string>
+			<key>offset</key>
+			<string>{4.5, 7.5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 8}, {253, 212}}</string>
+			<key>sourceSize</key>
+			<string>{262, 243}</string>
+			<key>tag</key>
+			<integer>0</integer>
+			<key>tint</key>
+			<string>{{255, 255}, {255, 255}}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{509, 2818}</string>
+		<key>textureFileName</key>
+		<string>woc_black_1.png</string>
+	</dict>
+</dict>
+</plist>
