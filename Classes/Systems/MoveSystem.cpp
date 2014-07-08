@@ -31,5 +31,6 @@ void MoveSystem::onAttached()
 
 void MoveSystem::onMoveCompleted()
 {
+    getNode()->removeFromParent();
     getECSManager()->removeEntity(getEntity());
 }

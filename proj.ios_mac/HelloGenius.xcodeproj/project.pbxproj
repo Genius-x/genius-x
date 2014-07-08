@@ -115,8 +115,6 @@
 		14F4951E196B8EE600C743FB /* BattleCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49501196B8EE600C743FB /* BattleCom.cpp */; };
 		14F4951F196B8EE600C743FB /* CoinCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49503196B8EE600C743FB /* CoinCom.cpp */; };
 		14F49520196B8EE600C743FB /* CoinCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49503196B8EE600C743FB /* CoinCom.cpp */; };
-		14F49521196B8EE600C743FB /* CollisionCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49505196B8EE600C743FB /* CollisionCom.cpp */; };
-		14F49522196B8EE600C743FB /* CollisionCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49505196B8EE600C743FB /* CollisionCom.cpp */; };
 		14F49523196B8EE600C743FB /* GunCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49507196B8EE600C743FB /* GunCom.cpp */; };
 		14F49524196B8EE600C743FB /* GunCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49507196B8EE600C743FB /* GunCom.cpp */; };
 		14F49525196B8EE600C743FB /* HealthCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49509196B8EE600C743FB /* HealthCom.cpp */; };
@@ -436,8 +434,6 @@
 		14F49502196B8EE600C743FB /* BattleCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleCom.h; sourceTree = "<group>"; };
 		14F49503196B8EE600C743FB /* CoinCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinCom.cpp; sourceTree = "<group>"; };
 		14F49504196B8EE600C743FB /* CoinCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinCom.h; sourceTree = "<group>"; };
-		14F49505196B8EE600C743FB /* CollisionCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionCom.cpp; sourceTree = "<group>"; };
-		14F49506196B8EE600C743FB /* CollisionCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionCom.h; sourceTree = "<group>"; };
 		14F49507196B8EE600C743FB /* GunCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GunCom.cpp; sourceTree = "<group>"; };
 		14F49508196B8EE600C743FB /* GunCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GunCom.h; sourceTree = "<group>"; };
 		14F49509196B8EE600C743FB /* HealthCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HealthCom.cpp; sourceTree = "<group>"; };
@@ -746,8 +742,6 @@
 				14F49502196B8EE600C743FB /* BattleCom.h */,
 				14F49503196B8EE600C743FB /* CoinCom.cpp */,
 				14F49504196B8EE600C743FB /* CoinCom.h */,
-				14F49505196B8EE600C743FB /* CollisionCom.cpp */,
-				14F49506196B8EE600C743FB /* CollisionCom.h */,
 				14F49507196B8EE600C743FB /* GunCom.cpp */,
 				14F49508196B8EE600C743FB /* GunCom.h */,
 				14F49509196B8EE600C743FB /* HealthCom.cpp */,
@@ -1209,7 +1203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F49521196B8EE600C743FB /* CollisionCom.cpp in Sources */,
 				14F49537196B8EE600C743FB /* WelcomeCom.cpp in Sources */,
 				14AC9541196B71510039CCA3 /* LevelDataSystem.cpp in Sources */,
 				14F49527196B8EE600C743FB /* LevelCom.cpp in Sources */,
@@ -1273,7 +1266,6 @@
 				14AC953E196B71510039CCA3 /* GunSystem.cpp in Sources */,
 				14F49524196B8EE600C743FB /* GunCom.cpp in Sources */,
 				14AC953A196B71510039CCA3 /* BattleSystem.cpp in Sources */,
-				14F49522196B8EE600C743FB /* CollisionCom.cpp in Sources */,
 				14AC9534196B71510039CCA3 /* ShopItemEvent.cpp in Sources */,
 				14F4952E196B8EE600C743FB /* MoveCom.cpp in Sources */,
 				14F49536196B8EE600C743FB /* ShopCom.cpp in Sources */,

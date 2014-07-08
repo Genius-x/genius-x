@@ -15,6 +15,15 @@
 #include "../Coms/LevelDataCom.h"
 #include "../GameSystemDelegate.h"
 
+
+static const int shipCategory           = 0x1 << 1;
+static const int gunCategory            = 0x1 << 2;
+static const int monsterCategory        = 0x1 << 3;
+static const int gunBulletCategory      = 0x1 << 4;
+static const int monsterBulletCategory  = 0x1 << 5;
+
+
+
 /**
  * 1，响应碰撞事件，做碰撞处理
  * 2, 处理游戏结束

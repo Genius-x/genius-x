@@ -21,7 +21,6 @@
 
 #include "../Coms/MoveCom.h"
 #include "../Coms/ProgressCom.h"
-#include "../Coms/CollisionCom.h"
 #include "../Coms/ShipCom.h"
 #include "../Coms/MonsterCom.h"
 
@@ -91,8 +90,16 @@ void BattleSystem::addShopItem(cocos2d::EventCustom* event)
     auto sprite=Sprite::create(sEvent->data.image);
     auto body=PhysicsBody::createBox(sprite->getContentSize());
     sprite->setPhysicsBody(body);
+    
+    //枪和怪物，子弹发生碰撞
+    body->setCollisionBitmask(0);
+    body->setCategoryBitmask(gunCategory);
+    body->setContactTestBitmask(monsterBulletCategory|monsterCategory);
+    
     sprite->setPosition(getPosition(sprite));
     getNode()->addChild(sprite);
+    sprite->setUserData(entity);
+    
     
     NodeCom* node=new NodeCom();
     node->node=sprite;
@@ -153,9 +160,12 @@ void BattleSystem::addMonster(cocos2d::EventCustom* event)
     
     auto body=PhysicsBody::createBox(sprite->getContentSize(),PhysicsMaterial(0.1f, 1, 0.0f));
     sprite->setPhysicsBody(body);
-    body->setCategoryBitmask(0x02);    // 0001
-    body->setContactTestBitmask(0x03); // 0100
-    body->setCollisionBitmask(0x01);   // 0011
+    
+    //怪物和子弹，飞船，枪发生碰撞
+    //body->setDynamic(false);
+    body->setCollisionBitmask(0);
+    body->setCategoryBitmask(monsterCategory);
+    body->setContactTestBitmask(shipCategory|gunCategory|gunBulletCategory);
     getNode()->addChild(sprite);
     
     //node
@@ -163,6 +173,7 @@ void BattleSystem::addMonster(cocos2d::EventCustom* event)
     node->node=sprite;
     getECSManager()->addComToEntity(node, entity);
     _monsters.push_back(entity);
+    sprite->setUserData(entity);
     
     //move
     auto move=new MoveCom();
@@ -176,11 +187,6 @@ void BattleSystem::addMonster(cocos2d::EventCustom* event)
         health->hp=data.hp;
         getECSManager()->addComToEntity(health, entity);
     }
-    
-    //collision
-    auto collide=new CollisionCom();
-    collide->target=ShipCom::_TYPE;
-    getECSManager()->addComToEntity(collide, entity);
     
     //gun
     if (data.bullet_hp>0) {
@@ -215,22 +221,26 @@ void BattleSystem::addBullet(cocos2d::EventCustom* event)
     sprite->setPhysicsBody(body);
     
     //怪物子弹
-    if (data->data.target==ShipCom::_TYPE) {
-        body->setCategoryBitmask(0x02);    // 0001
-        body->setContactTestBitmask(0x03); // 0100
-        body->setCollisionBitmask(0x01);   // 0011
-    }
-    else { //武器单位
-        body->setCategoryBitmask(0x03);    // 0010
-        body->setContactTestBitmask(0x02); // 1000
-        body->setCollisionBitmask(0x06);   // 0001
-    }
     
-    getNode()->addChild(sprite);
+    
+    body->setCollisionBitmask(0);
+    if (data->data.target==ShipCom::_TYPE) {
+        body->setCategoryBitmask(monsterBulletCategory);
+        body->setContactTestBitmask(shipCategory|monsterCategory|gunCategory|gunBulletCategory);
+
+    }else{
+        body->setCategoryBitmask(gunBulletCategory);
+        body->setContactTestBitmask(shipCategory|monsterCategory|gunCategory|monsterBulletCategory);
+    }
+
     
     NodeCom* node=new NodeCom();
     node->node=sprite;
+    sprite->setUserData(entity);
+    
     getECSManager()->addComToEntity(node, entity);
+    
+    getNode()->addChild(node->node);
     
     //move
     auto move=new MoveCom();
@@ -243,10 +253,6 @@ void BattleSystem::addBullet(cocos2d::EventCustom* event)
     health->hp=data->data.bullet_hp;
     getECSManager()->addComToEntity(health, entity);
     
-    //collision
-    auto collide=new CollisionCom();
-    collide->target=data->data.target;
-    getECSManager()->addComToEntity(collide, entity);
     
     _bullets.push_back(entity);
 }
@@ -256,20 +262,7 @@ bool BattleSystem::onPhysicsContact(cocos2d::PhysicsContact& contact)
     auto entityA=(Entity*)contact.getShapeA()->getBody()->getNode()->getUserData();
     auto entityB=(Entity*)contact.getShapeB()->getBody()->getNode()->getUserData();
     
-    if (!entityA||!entityB) {
-        return false;
-    }
-    
-    auto colA=(CollisionCom*)entityA->getComByType(CollisionCom::_TYPE);
-    auto colB=(CollisionCom*)entityB->getComByType(CollisionCom::_TYPE);
-    
-    bool shouldCollide=false;
-    if ((colA&&entityB->getComByType(colA->target))||
-        (colB&&entityA->getComByType(colB->target))) {
-        shouldCollide=true;
-    }
-    
-    if (!shouldCollide) {
+    if (!dynamic_cast<Entity*>(entityA)||!dynamic_cast<Entity*>(entityB)) {
         return false;
     }
     
@@ -281,7 +274,9 @@ bool BattleSystem::onPhysicsContact(cocos2d::PhysicsContact& contact)
         CoinsAddEvent* event=new CoinsAddEvent(monsterA?monsterA->data.coins:monsterB->data.coins);
         cocos2d::Director::getInstance()->getEventDispatcher()->dispatchEvent(event);
         
-        getECSManager()->removeEntity(monsterA?entityA:entityB);
+        auto temp=monsterA?entityA:entityB;
+        temp->getNode()->removeFromParent();
+        getECSManager()->removeEntity(temp);
     }
     else { //扣血
         auto hA=(HealthCom*)entityA->getComByType(HealthCom::_TYPE);
@@ -309,6 +304,10 @@ void BattleSystem::onDead(EventCustom* event)
         CCLOG("I'm Dead.");
     }
     else {
+        auto node=(NodeCom*)dead->entity->getComByType(NodeCom::_TYPE);
+        //dead->entity->getNode()->setPhysicsBody(nullptr);
+        dead->entity->getNode()->removeFromParent();
+        
         //怪物
         for (auto iter=_monsters.begin(); iter!=_monsters.end(); iter++) {
             if ((*iter)->getId()==dead->entity->getId()) {
@@ -399,11 +398,15 @@ void BattleSystem::onAttached()
         auto body=PhysicsBody::createBox(_shipSprite->getContentSize(),PhysicsMaterial(0.1f, 1, 0.0f));
         _shipSprite->setPhysicsBody(body);
         body->setTag(SHIP_DRAG_TAG);
-        body->setCategoryBitmask(0x03);    // 0010
-        body->setContactTestBitmask(0x02); // 1000
-        body->setCollisionBitmask(0x06);   // 0001
+        
+        
+        //body->setDynamic(false);
+        body->setCollisionBitmask(0);
+        body->setCategoryBitmask(shipCategory);
+        body->setContactTestBitmask(monsterCategory|monsterBulletCategory);
         
         getNode()->addChild(_shipSprite);
+        _shipSprite->setUserData(_ship);
 
         HealthCom* health=new HealthCom();
         health->hp=_data->ship_hp;

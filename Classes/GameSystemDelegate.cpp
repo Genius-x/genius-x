@@ -33,7 +33,6 @@
 #include "Coms/MoveCom.h"
 #include "Systems/MoveSystem.h"
 
-#include "Coms/CollisionCom.h"
 #include "Coms/ShipCom.h"
 #include "Coms/MonsterCom.h"
 
@@ -75,7 +74,6 @@ void GameSystemDelegate::init()
     getECS()->registerSystem(new MoveSystem());
     getECS()->registerCom(new MoveCom());
     
-    getECS()->registerCom(new CollisionCom());
     getECS()->registerCom(new MonsterCom());
     getECS()->registerCom(new ShipCom());
     
