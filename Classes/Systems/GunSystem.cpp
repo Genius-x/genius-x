@@ -34,7 +34,7 @@ void GunSystem::update(float dt)
     else {
         _currentTime=0;
         auto entities=getECSManager()->getAllEntitiesPosessingCom(_gun->data.target);
-        if (entities.size()>0) {
+        if (!entities.empty()) {
             GunEvent* event=new GunEvent(_gun->data);
             event->targetPosition=entities.at(0)->getNode()->getPosition();
             event->position=getNode()->convertToWorldSpace(cocos2d::Point::ZERO);

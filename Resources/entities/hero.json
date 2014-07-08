@@ -13,7 +13,7 @@
         "position": "{260,240}",
         "anchorPoint": "{0.5,0.5}",
         "font": "DFLiJinHeiW8-GB.ttf",
-        "fontSize": 30,
+        "fontSize": "30",
         "text": "驱使恶灵"
       },
       {
@@ -23,7 +23,7 @@
         "position": "{260,140}",
         "anchorPoint": "{0.5,0.5}",
         "font": "DFLiJinHeiW8-GB.ttf",
-        "fontSize": 30,
+        "fontSize": "30",
         "text": "大家好，我是驱使恶灵",
         "visible": true
       },

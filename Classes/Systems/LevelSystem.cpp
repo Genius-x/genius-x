@@ -66,7 +66,7 @@ void LevelSystem::onComsChanged()
 void LevelSystem::tableCellTouched(cocos2d::extension::TableView* table, cocos2d::extension::TableViewCell* cell)
 {
     auto entities= getECSManager()->getAllEntitiesPosessingCom(PlayerCom::_TYPE);
-    if (entities.size()>0) {
+    if (!entities.empty()) {
         auto player=(PlayerCom*)entities.at(0)->getComByType(PlayerCom::_TYPE);
         player->currentLevel=_level->data[cell->getIdx()].entity;
     }

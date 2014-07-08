@@ -110,7 +110,7 @@ private:
      * 为了便于快速根据类型查找对象
      * 这是面向类型的基础，始终通过类型查找游戏对象，而不是Id或者name
      */
-    std::map<std::string, cocos2d::Vector<Entity*>> _ComEntities;
+    std::map<std::string, cocos2d::Vector<Entity*>*> _ComEntities;
     int _lowestUnassignedEid;
     cocos2d::Vector<Entity*> __beAdding;
     cocos2d::Vector<Entity*> __beRemoving;

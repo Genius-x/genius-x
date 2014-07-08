@@ -207,55 +207,65 @@ GX::System* System::cloneEmpty() const
 void System::onInit()
 {
 #if CC_ENABLE_SCRIPT_BINDING
-    SystemScriptData* custom=new SystemScriptData();
-    CommonScriptData data(_scriptHandler,"init",custom);
-    ScriptEvent event(kCommonEvent,(void*)&data);
-    ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
-    custom->release();
+    if (_scriptType==kScriptTypeLua) {
+        SystemScriptData* custom=new SystemScriptData();
+        CommonScriptData data(_scriptHandler,"init",custom);
+        ScriptEvent event(kCommonEvent,(void*)&data);
+        ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
+        custom->release();
+    }
 #endif
 }
 
 void System::onAttached()
 {
 #if CC_ENABLE_SCRIPT_BINDING
-    SystemScriptData* custom=new SystemScriptData();
-    CommonScriptData data(_scriptHandler,"attached",custom);
-    ScriptEvent event(kCommonEvent,(void*)&data);
-    ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
-    custom->release();
+    if (_scriptType==kScriptTypeLua) {
+        SystemScriptData* custom=new SystemScriptData();
+        CommonScriptData data(_scriptHandler,"attached",custom);
+        ScriptEvent event(kCommonEvent,(void*)&data);
+        ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
+        custom->release();
+    }
 #endif
 }
 
 void System::onDeattached()
 {
 #if CC_ENABLE_SCRIPT_BINDING
-    SystemScriptData* custom=new SystemScriptData();
-    CommonScriptData data(_scriptHandler,"deattached",custom);
-    ScriptEvent event(kCommonEvent,(void*)&data);
-    ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
-    custom->release();
+    if (_scriptType==kScriptTypeLua) {
+        SystemScriptData* custom=new SystemScriptData();
+        CommonScriptData data(_scriptHandler,"deattached",custom);
+        ScriptEvent event(kCommonEvent,(void*)&data);
+        ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
+        custom->release();
+    }
 #endif
 }
 
 void System::update(float dt)
 {
 #if CC_ENABLE_SCRIPT_BINDING
-    SystemScriptData* custom=new SystemScriptData(dt);
-    CommonScriptData data(_scriptHandler,"update",custom);
-    ScriptEvent event(kCommonEvent,(void*)&data);
-    ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
-    custom->release();
+    if (_scriptType==kScriptTypeLua) {
+        SystemScriptData* custom=new SystemScriptData(dt);
+        CommonScriptData data(_scriptHandler,"update",custom);
+        ScriptEvent event(kCommonEvent,(void*)&data);
+        ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
+        custom->release();
+    }
 #endif
 }
 
 void System::onComsChanged()
 {
 #if CC_ENABLE_SCRIPT_BINDING
-    SystemScriptData* custom=new SystemScriptData();
-    CommonScriptData data(_scriptHandler,"changed",custom);
-    ScriptEvent event(kCommonEvent,(void*)&data);
-    ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
-    custom->release();
+    if (_scriptType==kScriptTypeLua) {
+        SystemScriptData* custom=new SystemScriptData();
+        CommonScriptData data(_scriptHandler,"changed",custom);
+        ScriptEvent event(kCommonEvent,(void*)&data);
+        ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
+        custom->release();
+    }
 #endif
 }
 

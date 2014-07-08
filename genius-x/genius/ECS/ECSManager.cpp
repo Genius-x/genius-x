@@ -219,8 +219,8 @@ cocos2d::Vector<Entity*> ECSManager::getAllEntitiesPosessingCom(const std::strin
     
     if (!cId.empty()) {
         auto entities=_ComEntities.find(cId);
-        if (entities!=_ComEntities.end()&&entities->second.size()>0) {
-            return entities->second;
+        if (entities!=_ComEntities.end()) {
+            return *entities->second;
         }
     }
     
@@ -300,16 +300,17 @@ void ECSManager::update(float dt)
 void ECSManager::__addCompontForIndex(GX::Com* Com,Entity* entity)
 {
     // 2. 为了便于更快根据Com类型查找entity
-    cocos2d::Vector<Entity*> ComEntities;
+    cocos2d::Vector<Entity*>* ComEntities;
     auto entities=_ComEntities.find(Com->getType());
     if (entities==_ComEntities.end()) {
+        ComEntities=new cocos2d::Vector<Entity*>();
         _ComEntities.insert(std::make_pair(Com->getType(), ComEntities));
     }
     else {
         ComEntities=entities->second;
     }
     
-    ComEntities.insert(0, entity);
+    ComEntities->insert(0, entity);
 }
 
 
@@ -372,9 +373,9 @@ void ECSManager::__removingEntities()
         //1.2,从ECSManager中移除所有Com(此时Coomponent已被移除)
         for (auto comIter=(*iter)->_coms.begin(); comIter!=(*iter)->_coms.end(); comIter++) {
             auto entities=_ComEntities[comIter->first];
-            auto temp=std::find(entities.begin(), entities.end(), (*iter));
-            if (temp!=entities.end()) {
-                entities.erase(temp);
+            auto temp=std::find(entities->begin(), entities->end(), (*iter));
+            if (temp!=entities->end()) {
+                entities->erase(temp);
             }
         }
         

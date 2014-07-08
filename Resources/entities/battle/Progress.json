@@ -27,7 +27,7 @@
         "type": "Label",
         "name": "timer",
         "font": "DFLiJinHeiW8-GB.ttf",
-        "fontSize": 40,
+        "fontSize": "40",
         "text": "100s",
         "anchorPoint": "{0.5,0.5}",
         "position": "{500,45}"

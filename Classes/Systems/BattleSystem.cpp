@@ -372,7 +372,7 @@ void BattleSystem::onAttached()
     _progress=entity->entities["progress"];
     
     auto entities= GameSystem::getInstance()->getECS()->getAllEntitiesPosessingCom(PlayerCom::_TYPE);
-    if (entities.size()>0) {
+    if (!entities.empty()) {
         _player=(PlayerCom*)entities.at(0)->getComByType(PlayerCom::_TYPE);
         
         //从配置中加载关卡，真实场景是从配置Id动态创建关卡数据对象

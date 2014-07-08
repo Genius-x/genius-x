@@ -14,9 +14,9 @@
         "type": "Label",
         "name": "coins_number",
         "font": "DFLiJinHeiW8-GB.ttf",
-        "fontSize": 30,
+        "fontSize": "30",
         "text": "100",
-        "fontColor": "{0,0,0}",
+        "fontColor": "{0,0,0,255}",
         "anchorPoint": "{0.5,0.5}",
         "position": "{100,120}"
       }

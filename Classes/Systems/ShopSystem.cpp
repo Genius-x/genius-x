@@ -33,7 +33,7 @@ GX::System* ShopSystem::cloneEmpty() const
 void ShopSystem::onAttached()
 {
     auto entities= GX::GameSystem::getInstance()->getECS()->getAllEntitiesPosessingCom(PlayerCom::_TYPE);
-    if (entities.size()>0) {
+    if (!entities.empty()) {
         _player=(PlayerCom*)entities.at(0)->getComByType(PlayerCom::_TYPE);
     }
     

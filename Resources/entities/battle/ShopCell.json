@@ -29,7 +29,7 @@
         "type": "Label",
         "name": "name",
         "font": "DFLiJinHeiW8-GB.ttf",
-        "fontSize": 20,
+        "fontSize": "20",
         "anchorPoint": "{0.5,0.5}",
         "position": "{80,60}"
       },
@@ -37,7 +37,7 @@
         "type": "Label",
         "name": "price",
         "font": "DFLiJinHeiW8-GB.ttf",
-        "fontSize": 20,
+        "fontSize": "20",
         "anchorPoint": "{0.5,0.5}",
         "position": "{80,40}"
       },
@@ -45,7 +45,7 @@
         "type": "Label",
         "font": "DFLiJinHeiW8-GB.ttf",
         "name": "description",
-        "fontSize": 20,
+        "fontSize": "20",
         "anchorPoint": "{0.5,0.5}",
         "position": "{80,20}"
       },
@@ -53,7 +53,7 @@
         "type": "Label",
         "font": "DFLiJinHeiW8-GB.ttf",
         "name": "bullet_hp",
-        "fontSize": 20,
+        "fontSize": "20",
         "anchorPoint": "{0.5,0.5}",
         "position": "{150,40}"
       }
