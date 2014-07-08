@@ -466,7 +466,7 @@
 		1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
 		1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* HelloGenius iOS. */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloGenius iOS."; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* HelloGenius iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloGenius iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
@@ -800,7 +800,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* HelloGenius iOS. */,
+				1D6058910D05DD3D006BFB54 /* HelloGenius iOS.app */,
 				5087E76F17EB910900C73F5D /* HelloGenius Mac.app */,
 			);
 			name = Products;
@@ -951,7 +951,7 @@
 			);
 			name = "HelloGenius iOS";
 			productName = iphone;
-			productReference = 1D6058910D05DD3D006BFB54 /* HelloGenius iOS. */;
+			productReference = 1D6058910D05DD3D006BFB54 /* HelloGenius iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5087E73D17EB910900C73F5D /* HelloGenius Mac */ = {
@@ -1356,9 +1356,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "";
-				COMPRESS_PNG_FILES = YES;
-				EXECUTABLE_EXTENSION = a;
-				EXECUTABLE_PREFIX = lib;
+				COMPRESS_PNG_FILES = NO;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1377,22 +1377,22 @@
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "";
-				INSTALL_PATH = /usr/local/lib;
+				INFOPLIST_FILE = ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_LDFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SDKROOT = iphoneos;
 				SEPARATE_STRIP = YES;
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = debugging;
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = all;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = "";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
@@ -1401,9 +1401,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "";
-				COMPRESS_PNG_FILES = YES;
-				EXECUTABLE_EXTENSION = a;
-				EXECUTABLE_PREFIX = lib;
+				COMPRESS_PNG_FILES = NO;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1420,23 +1420,23 @@
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "";
-				INSTALL_PATH = /usr/local/lib;
+				INFOPLIST_FILE = ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
 				SDKROOT = iphoneos;
 				SEPARATE_STRIP = YES;
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = debugging;
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = all;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = "";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
