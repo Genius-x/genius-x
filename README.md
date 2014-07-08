@@ -31,7 +31,7 @@ How to use?
   
 Discussion
 -------------
-you may leave a message at my blog: http://elvisco.de
+you may leave a message at my blog: http://genius-x.org
 
 
 Please enjoy this.
