@@ -160,10 +160,12 @@ protected:
     std::string _firstType;
     int _priority;
 
+protected:
     System(const std::string& type,const std::string&,int priority=0);
     virtual ~System();
-    
+
 private:
+
     int executeScriptTouchHandler(EventTouch::EventCode eventType, Touch* touch, Event* event);
     int executeScriptTouchesHandler(EventTouch::EventCode eventType, const std::vector<Touch*>& touches, Event* event);
     

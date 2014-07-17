@@ -41,7 +41,7 @@ typedef int32_t entity_id_type;
 
 /**
  * Entity仅表示一个Id,它可以用来表示游戏中的任何有意义的游戏对象，如button,hero,boss,tree等
- * 
+ *
  * @note
  * 1,Entity只能通过ECSManager来创建和删除，ECSManager负责Entity的Com和System附加管理，不能手动创建
  * 2,Entity一般只存在于Scene，Layer等游戏场景中，它一般不能被其它的Entity引用
@@ -53,8 +53,12 @@ typedef int32_t entity_id_type;
 class Entity:public cocos2d::Ref
 {
 public:
-    Entity();
-    virtual ~Entity();
+    
+    /**
+     * 对对象进行桶式更新
+     */
+    void setBucket(int bucket);
+    Entity* getParent(){return nullptr;}
     
     const entity_id_type& getId(){return _id;}
     
@@ -70,11 +74,10 @@ public:
         return target._id==_id;
     }
     
-    //@to do
-    std::string toJson();
-    std::string toXML();
-    
 private:
+    Entity();
+    virtual ~Entity();
+    
     /*
      * Entity只能通过ECSManager创建
      */
@@ -94,8 +97,6 @@ public:
     void removeCom(const std::string&);
     void removeAllComs();
     void ComsChanged();
-    void sortSystem();
-    //inline static bool sortSystem(System* s1,System* s2){return s1->getPriority()<s2->getPriority();}
 
     entity_id_type _id;
     

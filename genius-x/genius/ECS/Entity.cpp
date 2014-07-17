@@ -131,11 +131,6 @@ cocos2d::Node* Entity::getNode()
     return nullptr;
 }
 
-void Entity::sortSystem()
-{
-    //std::sort(_systems.begin(), _systems.end(),sortSystem);
-}
-
 void Entity::removeAllComs()
 {
     for (auto iter=_coms.begin(); iter!=_coms.end();) {
@@ -150,14 +145,4 @@ void Entity::ComsChanged()
     for (auto iter=_systems.begin(); iter!=_systems.end(); iter++) {
         iter->second->onComsChanged();
     }
-}
-
-std::string Entity::toJson()
-{
-    return nullptr;
-}
-
-std::string Entity::toXML()
-{
-    return nullptr;
 }

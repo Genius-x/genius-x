@@ -39,8 +39,7 @@
 #include "Common/Systems/TestSystem.h"
 #include "Common/Components/TestCom.h"
 
-#include "Common/Components/DragCom.h"
-#include "Common/Systems/DragSystem.h"
+#include "../Community/DragCom.h"
 
 #include "json/stringbuffer.h"
 #include "json/writer.h"
@@ -86,7 +85,7 @@ ECSManager::~ECSManager()
     
     //移除所有模板System
     for (auto iter=__unuseSystems.begin(); iter!=__unuseSystems.end(); iter++) {
-        iter->second->release();
+        (*iter)->release();
     }
     
     _entities.clear();
@@ -110,13 +109,6 @@ entity_id_type ECSManager::generateNewEid()
     if (_lowestUnassignedEid < UINT32_MAX){
          return _lowestUnassignedEid++;
     }
-//    else {
-//        for (entity_id_type i = 1; i < UINT32_MAX; ++i) {
-//            if (!__findEntity(_entities, i)){
-//                return i;
-//            }
-//        }
-//    }
     
     return 0;
 }
@@ -229,15 +221,18 @@ cocos2d::Vector<Entity*> ECSManager::getAllEntitiesPosessingCom(const std::strin
 
 void ECSManager::registerSystem(System* system)
 {
-    if (__unuseSystems.find(system->getType())==__unuseSystems.end()) {
-        __unuseSystems.insert(std::make_pair(system->getType(), system));
-    }
+    auto sort=[](System* i,System* j) { return (i->getPriority()<j->getPriority()); };
+
+    __unuseSystems.push_back(system);
+    std::sort(__unuseSystems.begin(), __unuseSystems.end(), sort);
 }
 
 void ECSManager::unregisterSystem(std::string typeName)
 {
-    if (__unuseSystems.find(typeName)==__unuseSystems.end()) {
-        __unuseSystems.erase(typeName);
+    for (auto iter=__unuseSystems.begin(); iter!=__unuseSystems.end();iter++) {
+        if ((*iter)->getType()==typeName) {
+            __unuseSystems.erase(iter);
+        }
     }
 }
 
@@ -317,10 +312,10 @@ void ECSManager::__addCompontForIndex(GX::Com* Com,Entity* entity)
 void ECSManager::__autoAttachingSystem(const std::string& type,Entity* entity)
 {
     for (auto iter=__unuseSystems.begin(); iter!=__unuseSystems.end(); iter++) {
-        if (iter->second->firstType()==type) {
-            std::string typeName=iter->second->getType();
+        if ((*iter)->firstType()==type) {
+            std::string typeName=(*iter)->getType();
             if (entity->_systems.find(typeName)==entity->_systems.end()) {
-                System* newSystem=iter->second->cloneEmpty();
+                System* newSystem=(*iter)->cloneEmpty();
                 
                 entity->_systems.insert(std::make_pair(typeName, newSystem));
                 newSystem->_isFree=false;
@@ -347,7 +342,7 @@ void ECSManager::__addingEntities()
         }
 
         //2, 排序
-        (*iter)->sortSystem();
+        //(*iter)->sortSystem();
         
         //3,onComChanged
         (*iter)->ComsChanged();

@@ -111,6 +111,9 @@ private:
      * 这是面向类型的基础，始终通过类型查找游戏对象，而不是Id或者name
      */
     std::map<std::string, cocos2d::Vector<Entity*>*> _ComEntities;
+    std::map<std::string,std::map<int,System*>*> _systemEntities;
+    std::vector<int> _buckets;
+    
     int _lowestUnassignedEid;
     cocos2d::Vector<Entity*> __beAdding;
     cocos2d::Vector<Entity*> __beRemoving;
@@ -124,7 +127,7 @@ private:
      *
      * you must add all System before add any Com to an Entity. you need add System dynamically ?
      */
-    std::map<std::string,System*> __unuseSystems;        //类型名称作为key：typeid(system).name
+    std::vector<System*> __unuseSystems;        //类型名称作为key：typeid(system).name
     std::map<std::string,Com*> __unuseComs;   //组件类型作为key: com->getType();
 };
 

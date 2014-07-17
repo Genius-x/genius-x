@@ -23,16 +23,84 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#ifndef __cocos2d_libs__DragSystem__
-#define __cocos2d_libs__DragSystem__
+#ifndef __cocos2d_libs__DragCom__
+#define __cocos2d_libs__DragCom__
 
-#include "../../../GXMacros.h"
-#include "../../System.h"
-#include "../Components/DragCom.h"
-
-static const float SingleClickDistance=10;
+#include "cocos2d.h"
+#include "../GXMacros.h"
+#include "../ECS/Com.h"
+#include "../ECS/Entity.h"
 
 NS_GX_BEGIN
+class DragSystem;
+
+/**
+ * 用来拖动一个该Entity对应的Node
+ */
+class DragCom :public GX::Com
+{
+public:
+    static std::string _TYPE;
+    DragCom();
+    
+    static DragCom* create(){return new DragCom();}
+    
+    /**
+     * 能否开始拖动
+     */
+    std::function<bool(Node*,const Vec2)> beginMove;
+    
+    /**
+     * 拖动中
+     */
+    std::function<void(Node*,const Vec2)> moving;
+    
+    /**
+     * 移动完成，返回结果告诉是否需要处理，如果为false则将移回原来的位置
+     */
+    std::function<bool(Node*,const Vec2)> moved;
+    
+    /**
+     * 返回到原来的位置
+     */
+    std::function<void()> movebacked;
+    
+    /**
+     * 单击
+     */
+    std::function<void(Node*)> nodeClicked;
+    
+    void setLocalZOrder(int order);
+    void setGlobalZOrder(int order);
+    void setTouchBehavior(bool draggable,bool clickable);
+    
+protected:
+    
+    bool onBeginMove(Node*,const Vec2);
+    void onMoving(Node*,const Vec2);
+    bool onMoved(Node*,const Vec2);
+    void onMovebacked();
+    
+    void onNodeClicked(Node*);
+    
+    virtual void initWithMap(rapidjson::Value&) override;
+    virtual Com* cloneEmpty() const override;
+    
+private:
+    int _localZOrder;
+    int _globalZOrder;
+    bool _localZOrderChanged;
+    bool _globalZOrderChanged;
+    bool _dragable;
+    bool _clickable;
+    
+    friend DragSystem;
+};
+
+
+
+
+static const float SingleClickDistance=10;
 
 class DragSystem : public GX::System
 {
@@ -59,9 +127,9 @@ private:
     Vec2 _beginPont;
 	Vec2 _touchPoint;
 	bool _isMoving;
-
+    
 };
 
 NS_GX_END
 
-#endif /* defined(__cocos2d_libs__DragSystem__) */
+#endif /* defined(__cocos2d_libs__DragCom__) */

@@ -35,11 +35,10 @@
 #include "ECS/Common/Components/NodeCom.h"
 #include "ECS/Common/Components/AnimationCom.h"
 #include "ECS/Common/Components/EntityCom.h"
-#include "ECS/Common/Components/DragCom.h"
+#include "Community/DragCom.h"
 #include "ECS/Common/Systems/NodeSystem.h"
 #include "ECS/Common/Systems/AnimationSystem.h"
 #include "ECS/Common/Systems/EntitySystem.h"
-#include "ECS/Common/Systems/DragSystem.h"
 #include "GameSystem/GameSystem.h"
 
 #include "Resource/Resource.h"
