@@ -1180,6 +1180,9 @@ void Director::createStatsLabel()
     _drawnVerticesLabel->initWithString("00000", texture, 12, 32, '.');
     _drawnVerticesLabel->setScale(scaleFactor);
 
+    _FPSLabel->setColor(Color3B(0, 255, 0));
+    _drawnBatchesLabel->setColor(Color3B(255, 255, 0));
+    _drawnVerticesLabel->setColor(Color3B(255, 0, 0));
 
     Texture2D::setDefaultAlphaPixelFormat(currentFormat);
 

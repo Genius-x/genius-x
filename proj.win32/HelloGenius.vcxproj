@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -23,6 +23,7 @@
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -30,6 +31,7 @@
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -69,7 +71,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cocos2d;..\cocos2d\cocos;..\cocos2d\cocos\base;..\cocos2d\cocos\2d;..\cocos2d\cocos\deprecated;..\cocos2d\cocos\physics;..\cocos2d\cocos\math\kazmath;..\cocos2d\cocos\platform\win32;..\cocos2d\cocos\2d\platform;..\cocos2d\cocos\audio\include;..\cocos2d\cocos\editor-support;..\cocos2d\cocos\editor-support\spine;..\cocos2d\cocos\editor-support\cocostudio;..\cocos2d\cocos\editor-support\cocosbuilder;..\cocos2d\cocos\ui;..\cocos2d\cocos\storage;..\cocos2d\extensions\GUI\CCScrollView;..\cocos2d\extensions;..\cocos2d\external;..\cocos2d\external\chipmunk\include\chipmunk;..\cocos2d\external\lua;..\cocos2d\external\lua\luajit\include;..\cocos2d\external\lua\tolua;..\Classes;..;..\genius-x\genius;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -82,7 +84,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freetype250.lib;genius-x.lib;glew32.lib;glfw3.lib;libAudio.lib;libBox2D.lib;libchipmunk.lib;libcocos2d.lib;libCocosBuilder.lib;libCocosStudio.lib;libcurl_imp.lib;libExtensions.lib;libGUI.lib;libiconv.lib;libjpeg.lib;libLocalStorage.lib;liblua.lib;libNetwork.lib;libpng.lib;libSpine.lib;libtiff.lib;libwebp.lib;libzlib.lib;lua51.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -102,7 +104,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cocos2d;..\cocos2d\cocos;..\cocos2d\cocos\base;..\cocos2d\cocos\2d;..\cocos2d\cocos\deprecated;..\cocos2d\cocos\physics;..\cocos2d\cocos\math\kazmath;..\cocos2d\cocos\platform\win32;..\cocos2d\cocos\2d\platform;..\cocos2d\cocos\audio\include;..\cocos2d\cocos\editor-support;..\cocos2d\cocos\editor-support\spine;..\cocos2d\cocos\editor-support\cocostudio;..\cocos2d\cocos\editor-support\cocosbuilder;..\cocos2d\cocos\ui;..\cocos2d\cocos\storage;..\cocos2d\extensions\GUI\CCScrollView;..\cocos2d\extensions;..\cocos2d\external;..\cocos2d\external\chipmunk\include\chipmunk;..\cocos2d\external\lua;..\cocos2d\external\lua\luajit\include;..\cocos2d\external\lua\tolua;..\Classes;..;..\genius-x\genius;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -134,25 +136,80 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\BattleScene.cpp" />
+    <ClCompile Include="..\Classes\Coms\BattleCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\CoinCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\GunCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\HealthCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\LevelCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\LevelDataCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\MonsterCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\MoveCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\PlayerCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\ProgressCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\ShipCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\ShopCom.cpp" />
+    <ClCompile Include="..\Classes\Coms\WelcomeCom.cpp" />
+    <ClCompile Include="..\Classes\Events\BeginGameEvent.cpp" />
+    <ClCompile Include="..\Classes\Events\CoinsAddEvent.cpp" />
+    <ClCompile Include="..\Classes\Events\DeadEvent.cpp" />
+    <ClCompile Include="..\Classes\Events\GameOverEvent.cpp" />
+    <ClCompile Include="..\Classes\Events\GunEvent.cpp" />
+    <ClCompile Include="..\Classes\Events\MonsterAddEvent.cpp" />
+    <ClCompile Include="..\Classes\Events\ShopItemEvent.cpp" />
+    <ClCompile Include="..\Classes\GameSystemDelegate.cpp" />
+    <ClCompile Include="..\Classes\LevelScene.cpp" />
+    <ClCompile Include="..\Classes\Systems\BattleSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\CoinSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\GunSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\HealthSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\LevelDataSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\LevelSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\MoveSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\ProgressSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\ShopSystem.cpp" />
+    <ClCompile Include="..\Classes\Systems\WelcomeSystem.cpp" />
+    <ClCompile Include="..\Classes\WelcomeScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\AppMacros.h" />
+    <ClInclude Include="..\Classes\BattleScene.h" />
+    <ClInclude Include="..\Classes\Coms\BattleCom.h" />
+    <ClInclude Include="..\Classes\Coms\CoinCom.h" />
+    <ClInclude Include="..\Classes\Coms\GunCom.h" />
+    <ClInclude Include="..\Classes\Coms\HealthCom.h" />
+    <ClInclude Include="..\Classes\Coms\LevelCom.h" />
+    <ClInclude Include="..\Classes\Coms\LevelDataCom.h" />
+    <ClInclude Include="..\Classes\Coms\MonsterCom.h" />
+    <ClInclude Include="..\Classes\Coms\MoveCom.h" />
+    <ClInclude Include="..\Classes\Coms\PlayerCom.h" />
+    <ClInclude Include="..\Classes\Coms\ProgressCom.h" />
+    <ClInclude Include="..\Classes\Coms\ShipCom.h" />
+    <ClInclude Include="..\Classes\Coms\ShopCom.h" />
+    <ClInclude Include="..\Classes\Coms\WelcomeCom.h" />
+    <ClInclude Include="..\Classes\Events\BeginGameEvent.h" />
+    <ClInclude Include="..\Classes\Events\CoinsAddEvent.h" />
+    <ClInclude Include="..\Classes\Events\DeadEvent.h" />
+    <ClInclude Include="..\Classes\Events\GameOverEvent.h" />
+    <ClInclude Include="..\Classes\Events\GunEvent.h" />
+    <ClInclude Include="..\Classes\Events\MonsterAddEvent.h" />
+    <ClInclude Include="..\Classes\Events\ShopItemEvent.h" />
+    <ClInclude Include="..\Classes\GameSystemDelegate.h" />
+    <ClInclude Include="..\Classes\LevelScene.h" />
+    <ClInclude Include="..\Classes\Systems\BattleSystem.h" />
+    <ClInclude Include="..\Classes\Systems\CoinSystem.h" />
+    <ClInclude Include="..\Classes\Systems\GunSystem.h" />
+    <ClInclude Include="..\Classes\Systems\HealthSystem.h" />
+    <ClInclude Include="..\Classes\Systems\LevelDataSystem.h" />
+    <ClInclude Include="..\Classes\Systems\LevelSystem.h" />
+    <ClInclude Include="..\Classes\Systems\MoveSystem.h" />
+    <ClInclude Include="..\Classes\Systems\ProgressSystem.h" />
+    <ClInclude Include="..\Classes\Systems\ShopSystem.h" />
+    <ClInclude Include="..\Classes\Systems\WelcomeSystem.h" />
+    <ClInclude Include="..\Classes\WelcomeScene.h" />
     <ClInclude Include="main.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\cocos2d\cocos\2d\cocos2d.vcxproj">
-      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj">
-      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\cocos2d\external\chipmunk\proj.win32\chipmunk.vcxproj">
-      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc" />

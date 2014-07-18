@@ -10,15 +10,123 @@
     <Filter Include="resource">
       <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Coms">
+      <UniqueIdentifier>{dedbd25a-a973-4a4f-8529-d7580cbbd134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Events">
+      <UniqueIdentifier>{39e6aeb1-5d3c-4739-a690-e096c4ad1aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Systems">
+      <UniqueIdentifier>{f41c2afc-f98a-4ff7-be18-118884732361}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>win32</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Coms\BattleCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\CoinCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\GunCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\HealthCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\LevelCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\LevelDataCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\MonsterCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\MoveCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\PlayerCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\ProgressCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\ShipCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\ShopCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coms\WelcomeCom.cpp">
+      <Filter>Classes\Coms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Events\BeginGameEvent.cpp">
+      <Filter>Classes\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Events\CoinsAddEvent.cpp">
+      <Filter>Classes\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Events\DeadEvent.cpp">
+      <Filter>Classes\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Events\GameOverEvent.cpp">
+      <Filter>Classes\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Events\GunEvent.cpp">
+      <Filter>Classes\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Events\MonsterAddEvent.cpp">
+      <Filter>Classes\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Events\ShopItemEvent.cpp">
+      <Filter>Classes\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\BattleSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\CoinSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\GunSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\HealthSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\LevelDataSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\LevelSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\MoveSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\ProgressSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\ShopSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Systems\WelcomeSystem.cpp">
+      <Filter>Classes\Systems</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="..\Classes\BattleScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameSystemDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WelcomeScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,10 +134,112 @@
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Coms\BattleCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\CoinCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\GunCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\HealthCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\LevelCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\LevelDataCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\MonsterCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\MoveCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\PlayerCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\ProgressCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\ShipCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\ShopCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coms\WelcomeCom.h">
+      <Filter>Classes\Coms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events\BeginGameEvent.h">
+      <Filter>Classes\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events\CoinsAddEvent.h">
+      <Filter>Classes\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events\DeadEvent.h">
+      <Filter>Classes\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events\GameOverEvent.h">
+      <Filter>Classes\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events\GunEvent.h">
+      <Filter>Classes\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events\MonsterAddEvent.h">
+      <Filter>Classes\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events\ShopItemEvent.h">
+      <Filter>Classes\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\BattleSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\CoinSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\GunSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\HealthSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\LevelDataSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\LevelSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\MoveSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\ProgressSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\ShopSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\WelcomeSystem.h">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BattleScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameSystemDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WelcomeScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>

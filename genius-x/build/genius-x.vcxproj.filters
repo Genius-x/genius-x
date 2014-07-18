@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Community">
+      <UniqueIdentifier>{cfdc2d06-2d0b-4454-8563-14aa7f995298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS">
+      <UniqueIdentifier>{dcd8f7e8-41c4-4b34-b787-dc563705aee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Common">
+      <UniqueIdentifier>{131ca535-d0e1-47cf-84a0-424a365ae7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Common\Components">
+      <UniqueIdentifier>{6eedc84a-f8b5-4756-b8e0-78a6acf736f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Common\Systems">
+      <UniqueIdentifier>{2404d69d-98b1-483f-ae0a-63645d035a29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem">
+      <UniqueIdentifier>{41a0904d-6dac-4c86-90ae-2b260563fc30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{a1e66c92-61e8-461e-9f62-b42bd6aae157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{0519b22a-8c65-4efd-8665-5f65e402791a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{9f057b62-995e-450a-9c10-9fc25e1429c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\genius\Community\DragCom.cpp">
+      <Filter>Community</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Com.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\ECSManager.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Entity.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\System.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Components\AnimationCom.cpp">
+      <Filter>ECS\Common\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Components\EntityCom.cpp">
+      <Filter>ECS\Common\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Components\NodeCom.cpp">
+      <Filter>ECS\Common\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Components\ParticleCom.cpp">
+      <Filter>ECS\Common\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Components\TestCom.cpp">
+      <Filter>ECS\Common\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Systems\AnimationSystem.cpp">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Systems\EntitySystem.cpp">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Systems\NodeSystem.cpp">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\ECS\Common\Systems\TestSystem.cpp">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\GameSystem\FTUE.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\GameSystem\GameSystem.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\GameSystem\Localization.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\GameSystem\MessageBox.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\GameSystem\Notification.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\GameSystem\Statistics.cpp">
+      <Filter>GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\Resource\ComData.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\Resource\Resource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\Resource\ResourceCache.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\Utility\Common.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\Utility\DataBase.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genius\Utility\GameConfig.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\genius\Community\DragCom.h">
+      <Filter>Community</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Com.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\ECSManager.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Entity.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\System.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Components\AnimationCom.h">
+      <Filter>ECS\Common\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Components\EntityCom.h">
+      <Filter>ECS\Common\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Components\NodeCom.h">
+      <Filter>ECS\Common\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Components\ParticleCom.h">
+      <Filter>ECS\Common\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Components\TestCom.h">
+      <Filter>ECS\Common\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Systems\AnimationSystem.h">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Systems\EntitySystem.h">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Systems\NodeSystem.h">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\ECS\Common\Systems\TestSystem.h">
+      <Filter>ECS\Common\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\GameSystem\FTUE.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\GameSystem\GameSystem.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\GameSystem\Localization.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\GameSystem\MessageBox.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\GameSystem\Notification.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\GameSystem\Statistics.h">
+      <Filter>GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\GXMacros.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\Resource\ComData.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\Resource\Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\Resource\ResourceCache.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\Resource\ResourceDataDelegate.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\Utility\Common.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\Utility\DataBase.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\genius\Utility\GameConfig.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

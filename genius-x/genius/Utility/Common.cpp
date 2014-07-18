@@ -32,9 +32,9 @@
 #include <ctime>
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-#include "strptime.c"
-
-char *strptime(const char * __restrict, const char * __restrict, struct tm * __restrict);
+// #include "strptime.c"
+// 
+// char *strptime(const char * __restrict, const char * __restrict, struct tm * __restrict);
 
 #endif
 
@@ -165,7 +165,7 @@ std::string convertTimeToString(time_t t)
 time_t convertStringToTime(const std::string& str)
 {
     struct tm time_str;
-    strptime(str.c_str(), "%a, %d.%m.%Y %H:%M:%S", &time_str);
+//     strptime(str.c_str(), "%a, %d.%m.%Y %H:%M:%S", &time_str);
     return mktime(&time_str);
 }
 

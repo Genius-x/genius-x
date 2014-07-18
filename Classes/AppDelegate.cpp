@@ -26,7 +26,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
-    director->setAnimationInterval(1.0 / 60);
+    director->setAnimationInterval(1.0 / 60000);
 
     //初始化GameSystemDelegate,在创建UI之前
     GameSystemDelegate* _gameSystem=new GameSystemDelegate();

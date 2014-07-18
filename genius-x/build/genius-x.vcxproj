@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\genius\Community\DragCom.cpp" />
+    <ClCompile Include="..\genius\ECS\Com.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Components\AnimationCom.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Components\EntityCom.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Components\NodeCom.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Components\ParticleCom.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Components\TestCom.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Systems\AnimationSystem.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Systems\EntitySystem.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Systems\NodeSystem.cpp" />
+    <ClCompile Include="..\genius\ECS\Common\Systems\TestSystem.cpp" />
+    <ClCompile Include="..\genius\ECS\ECSManager.cpp" />
+    <ClCompile Include="..\genius\ECS\Entity.cpp" />
+    <ClCompile Include="..\genius\ECS\System.cpp" />
+    <ClCompile Include="..\genius\GameSystem\FTUE.cpp" />
+    <ClCompile Include="..\genius\GameSystem\GameSystem.cpp" />
+    <ClCompile Include="..\genius\GameSystem\Localization.cpp" />
+    <ClCompile Include="..\genius\GameSystem\MessageBox.cpp" />
+    <ClCompile Include="..\genius\GameSystem\Notification.cpp" />
+    <ClCompile Include="..\genius\GameSystem\Statistics.cpp" />
+    <ClCompile Include="..\genius\Resource\ComData.cpp" />
+    <ClCompile Include="..\genius\Resource\Resource.cpp" />
+    <ClCompile Include="..\genius\Resource\ResourceCache.cpp" />
+    <ClCompile Include="..\genius\Utility\Common.cpp" />
+    <ClCompile Include="..\genius\Utility\DataBase.cpp" />
+    <ClCompile Include="..\genius\Utility\GameConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\genius\Community\DragCom.h" />
+    <ClInclude Include="..\genius\ECS\Com.h" />
+    <ClInclude Include="..\genius\ECS\Common\Components\AnimationCom.h" />
+    <ClInclude Include="..\genius\ECS\Common\Components\EntityCom.h" />
+    <ClInclude Include="..\genius\ECS\Common\Components\NodeCom.h" />
+    <ClInclude Include="..\genius\ECS\Common\Components\ParticleCom.h" />
+    <ClInclude Include="..\genius\ECS\Common\Components\TestCom.h" />
+    <ClInclude Include="..\genius\ECS\Common\Systems\AnimationSystem.h" />
+    <ClInclude Include="..\genius\ECS\Common\Systems\EntitySystem.h" />
+    <ClInclude Include="..\genius\ECS\Common\Systems\NodeSystem.h" />
+    <ClInclude Include="..\genius\ECS\Common\Systems\TestSystem.h" />
+    <ClInclude Include="..\genius\ECS\ECSManager.h" />
+    <ClInclude Include="..\genius\ECS\Entity.h" />
+    <ClInclude Include="..\genius\ECS\System.h" />
+    <ClInclude Include="..\genius\GameSystem\FTUE.h" />
+    <ClInclude Include="..\genius\GameSystem\GameSystem.h" />
+    <ClInclude Include="..\genius\GameSystem\Localization.h" />
+    <ClInclude Include="..\genius\GameSystem\MessageBox.h" />
+    <ClInclude Include="..\genius\GameSystem\Notification.h" />
+    <ClInclude Include="..\genius\GameSystem\Statistics.h" />
+    <ClInclude Include="..\genius\GXMacros.h" />
+    <ClInclude Include="..\genius\Resource\ComData.h" />
+    <ClInclude Include="..\genius\Resource\Resource.h" />
+    <ClInclude Include="..\genius\Resource\ResourceCache.h" />
+    <ClInclude Include="..\genius\Resource\ResourceDataDelegate.h" />
+    <ClInclude Include="..\genius\Utility\Common.h" />
+    <ClInclude Include="..\genius\Utility\DataBase.h" />
+    <ClInclude Include="..\genius\Utility\GameConfig.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A64F8F7B-3C5B-44E7-9DED-F93FDE78641B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>geniusx</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..;..\..\cocos2d;..\..\cocos2d\cocos;..\..\cocos2d\cocos\base;..\..\cocos2d\cocos\2d;..\..\cocos2d\cocos\deprecated;..\..\cocos2d\cocos\physics;..\..\cocos2d\cocos\math\kazmath;..\..\cocos2d\cocos\platform\win32;..\..\cocos2d\cocos\2d\platform;..\..\cocos2d\cocos\audio\include;..\..\cocos2d\cocos\editor-support;..\..\cocos2d\cocos\editor-support\spine;..\..\cocos2d\cocos\editor-support\cocostudio;..\..\cocos2d\cocos\editor-support\cocosbuilder;..\..\cocos2d\cocos\ui;..\..\cocos2d\cocos\storage;..\..\cocos2d\extensions\GUI\CCScrollView;..\..\cocos2d\extensions;..\..\cocos2d\external;..\..\cocos2d\external\chipmunk\include\chipmunk;..\..\cocos2d\external\lua;..\..\cocos2d\external\lua\luajit\include;..\..\cocos2d\external\lua\tolua;..\..\cocos2d\external\win32-specific\gles\include\OGLES;..\..\cocos2d\external\glfw3\include\win32</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINDOWS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..;..\..\cocos2d;..\..\cocos2d\cocos;..\..\cocos2d\cocos\base;..\..\cocos2d\cocos\2d;..\..\cocos2d\cocos\deprecated;..\..\cocos2d\cocos\physics;..\..\cocos2d\cocos\math\kazmath;..\..\cocos2d\cocos\2d\platform;..\..\cocos2d\cocos\audio\include;..\..\cocos2d\cocos\editor-support;..\..\cocos2d\cocos\editor-support\spine;..\..\cocos2d\cocos\editor-support\cocostudio;..\..\cocos2d\cocos\editor-support\cocosbuilder;..\..\cocos2d\cocos\ui;..\..\cocos2d\cocos\storage;..\..\cocos2d\extensions\GUI\CCScrollView;..\..\cocos2d\extensions;..\..\cocos2d\external;..\..\cocos2d\external\chipmunk\include\chipmunk;..\..\cocos2d\external\lua; ..\..\cocos2d\external\lua\luajit\include; ..\..\cocos2d\external\lua\tolua;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
