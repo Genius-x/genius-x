@@ -111,7 +111,7 @@ ResourceCache* Resource::getResourceCache()
     return _resourceCache;
 }
 
-void Resource::addResourceReference(const std::unordered_map<std::string,std::string>& files)
+void Resource::addResourceReference(const cocos2d::ValueMap& files)
 {
     if (files.size()<1)
         return;
@@ -126,7 +126,7 @@ void Resource::addResourceReference(const std::unordered_map<std::string,std::st
             else {
                 _resourceReferences.insert(std::make_pair(fullpath, 1));
                 _resourceNotLoadded.push_back(fullpath);
-                _resourceTypes.insert(std::make_pair(fullpath, iter->second));
+                _resourceTypes.insert(std::make_pair(fullpath, iter->second.asString()));
             }
         }
     }

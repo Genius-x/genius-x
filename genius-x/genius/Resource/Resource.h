@@ -120,7 +120,7 @@ public:
      * 新增加的资源将在下一次调用updateResourceAsync的时候异步载入
      */
     
-    void addResourceReference(const std::unordered_map<std::string,std::string>& files);
+    void addResourceReference(const cocos2d::ValueMap& files);
     
     /**
      * 告知资源管理器哪些资源不再被使用(对应资源引用技术减1)

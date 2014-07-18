@@ -212,6 +212,20 @@
 			remoteGlobalIDString = 147EF6B819684185000D2E7F;
 			remoteInfo = "geniusx Mac";
 		};
+		14FDB59E1978B4B700B2A5B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14FDB5971978B4B700B2A5B2 /* cocos2d_lua_bindings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AACE74618BC45A000215002;
+			remoteInfo = "luabindings Mac";
+		};
+		14FDB5A01978B4B700B2A5B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14FDB5971978B4B700B2A5B2 /* cocos2d_lua_bindings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AACE74718BC45A000215002;
+			remoteInfo = "luabindings iOS";
+		};
 		1AC6FAF8180E9839004C840B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
@@ -456,6 +470,7 @@
 		14F4951A196B8EE600C743FB /* ShopCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCom.h; sourceTree = "<group>"; };
 		14F4951B196B8EE600C743FB /* WelcomeCom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeCom.cpp; sourceTree = "<group>"; };
 		14F4951C196B8EE600C743FB /* WelcomeCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeCom.h; sourceTree = "<group>"; };
+		14FDB5971978B4B700B2A5B2 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../cocos2d/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B916D35E4900DB1158 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
@@ -769,6 +784,15 @@
 			path = ../Classes/Coms;
 			sourceTree = "<group>";
 		};
+		14FDB5981978B4B700B2A5B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14FDB59F1978B4B700B2A5B2 /* libluabindings Mac.a */,
+				14FDB5A11978B4B700B2A5B2 /* libluabindings iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -820,6 +844,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				14FDB5971978B4B700B2A5B2 /* cocos2d_lua_bindings.xcodeproj */,
 				147EF68819684106000D2E7F /* genius-x.xcodeproj */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				15AA9C4015B7EC450033D6C2 /* Classes */,
@@ -1001,6 +1026,10 @@
 					ProjectRef = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
 				},
 				{
+					ProductGroup = 14FDB5981978B4B700B2A5B2 /* Products */;
+					ProjectRef = 14FDB5971978B4B700B2A5B2 /* cocos2d_lua_bindings.xcodeproj */;
+				},
+				{
 					ProductGroup = 147EF68919684106000D2E7F /* Products */;
 					ProjectRef = 147EF68819684106000D2E7F /* genius-x.xcodeproj */;
 				},
@@ -1026,6 +1055,20 @@
 			fileType = "compiled.mach-o.dylib";
 			path = "libgeniusx Mac.a";
 			remoteRef = 14AC948E196AF7210039CCA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14FDB59F1978B4B700B2A5B2 /* libluabindings Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libluabindings Mac.a";
+			remoteRef = 14FDB59E1978B4B700B2A5B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14FDB5A11978B4B700B2A5B2 /* libluabindings iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libluabindings iOS.a";
+			remoteRef = 14FDB5A01978B4B700B2A5B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */ = {
