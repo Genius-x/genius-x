@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144C9787197D2C690026D426 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147EF66719684097000D2E7F /* XCTest.framework */; };
+		144C9788197D2C690026D426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F4945D196B863500C743FB /* Foundation.framework */; };
+		144C9789197D2C690026D426 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147EF66A19684097000D2E7F /* UIKit.framework */; };
+		144C978F197D2C690026D426 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 144C978D197D2C690026D426 /* InfoPlist.strings */; };
+		144C9791197D2C690026D426 /* geniusx_iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144C9790197D2C690026D426 /* geniusx_iOS_Tests.m */; };
+		144C97A5197D2F0B0026D426 /* ECSManager_Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144C979A197D2F0B0026D426 /* ECSManager_Tests.mm */; };
+		144C97A6197D2F0B0026D426 /* Entity_Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144C979B197D2F0B0026D426 /* Entity_Tests.mm */; };
+		144C97A7197D2F0B0026D426 /* Resource_AsyncTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144C979D197D2F0B0026D426 /* Resource_AsyncTests.mm */; };
+		144C97A8197D2F0B0026D426 /* Common_Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144C979F197D2F0B0026D426 /* Common_Tests.mm */; };
+		144C97AA197D2F0B0026D426 /* GameConfig_Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144C97A1197D2F0B0026D426 /* GameConfig_Tests.mm */; };
+		144C97AB197D2F0B0026D426 /* Localization_Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144C97A2197D2F0B0026D426 /* Localization_Tests.mm */; };
+		144C97AC197D2F0B0026D426 /* XCTestCase+AsyncTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 144C97A4197D2F0B0026D426 /* XCTestCase+AsyncTesting.m */; };
+		144C97AE197D31DB0026D426 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144C97AD197D31DB0026D426 /* OpenGLES.framework */; };
+		144C97B0197D31E30026D426 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 144C97AF197D31E30026D426 /* libz.dylib */; };
+		144C97B2197D32F80026D426 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144C97B1197D32F80026D426 /* CoreMotion.framework */; };
+		144C97B5197D33090026D426 /* libcocos2dx iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 144C97B3197D33090026D426 /* libcocos2dx iOS.a */; };
+		144C97B6197D33090026D426 /* libcocos2dx-extensions iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 144C97B4197D33090026D426 /* libcocos2dx-extensions iOS.a */; };
+		144C97B7197D33130026D426 /* libgeniusx iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147EF69219684145000D2E7F /* libgeniusx iOS.a */; };
 		1463A1A2196AE9F600B0056E /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1463A1A1196AE9F600B0056E /* libcocos2dx Mac.a */; };
 		14CF22C61977D17B00382380 /* DragCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CF22C41977D17B00382380 /* DragCom.cpp */; };
 		14CF22C71977D17B00382380 /* DragCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CF22C41977D17B00382380 /* DragCom.cpp */; };
@@ -97,6 +115,16 @@
 		14F494FF196B8EB300C743FB /* genius-x.h in Sources */ = {isa = PBXBuildFile; fileRef = 14F494FC196B8E5900C743FB /* genius-x.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		144C9793197D2C690026D426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147EF64E19684097000D2E7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147EF69119684145000D2E7F;
+			remoteInfo = "geniusx iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		147EF69019684145000D2E7F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -110,6 +138,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		144C9786197D2C690026D426 /* geniusx iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "geniusx iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		144C978C197D2C690026D426 /* geniusx iOS Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "geniusx iOS Tests-Info.plist"; sourceTree = "<group>"; };
+		144C978E197D2C690026D426 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		144C9790197D2C690026D426 /* geniusx_iOS_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = geniusx_iOS_Tests.m; sourceTree = "<group>"; };
+		144C9792197D2C690026D426 /* geniusx iOS Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geniusx iOS Tests-Prefix.pch"; sourceTree = "<group>"; };
+		144C979A197D2F0B0026D426 /* ECSManager_Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ECSManager_Tests.mm; sourceTree = "<group>"; };
+		144C979B197D2F0B0026D426 /* Entity_Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Entity_Tests.mm; sourceTree = "<group>"; };
+		144C979D197D2F0B0026D426 /* Resource_AsyncTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Resource_AsyncTests.mm; sourceTree = "<group>"; };
+		144C979F197D2F0B0026D426 /* Common_Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Common_Tests.mm; sourceTree = "<group>"; };
+		144C97A1197D2F0B0026D426 /* GameConfig_Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameConfig_Tests.mm; sourceTree = "<group>"; };
+		144C97A2197D2F0B0026D426 /* Localization_Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Localization_Tests.mm; sourceTree = "<group>"; };
+		144C97A3197D2F0B0026D426 /* XCTestCase+AsyncTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+AsyncTesting.h"; sourceTree = "<group>"; };
+		144C97A4197D2F0B0026D426 /* XCTestCase+AsyncTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+AsyncTesting.m"; sourceTree = "<group>"; };
+		144C97AD197D31DB0026D426 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		144C97AF197D31E30026D426 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		144C97B1197D32F80026D426 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		144C97B3197D33090026D426 /* libcocos2dx iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx iOS.a"; path = "../../cocos2d/build/build/Debug-iphoneos/libcocos2dx iOS.a"; sourceTree = "<group>"; };
+		144C97B4197D33090026D426 /* libcocos2dx-extensions iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx-extensions iOS.a"; path = "../../cocos2d/build/build/Debug-iphoneos/libcocos2dx-extensions iOS.a"; sourceTree = "<group>"; };
 		1463A19D196ADE0B00B0056E /* libcocos2dx-extensions iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx-extensions iOS.a"; path = "../../cocos2d/build/build/Debug-iphoneos/libcocos2dx-extensions iOS.a"; sourceTree = "<group>"; };
 		1463A1A1196AE9F600B0056E /* libcocos2dx Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2dx Mac.a"; path = "../../../../Library/Developer/Xcode/DerivedData/HelloGenius-eaaetkmtsfcrsxhbntfudrmebtep/Build/Products/Debug/libcocos2dx Mac.a"; sourceTree = "<group>"; };
 		147EF65919684097000D2E7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,6 +228,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		144C9783197D2C690026D426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144C97B7197D33130026D426 /* libgeniusx iOS.a in Frameworks */,
+				144C97B5197D33090026D426 /* libcocos2dx iOS.a in Frameworks */,
+				144C97B6197D33090026D426 /* libcocos2dx-extensions iOS.a in Frameworks */,
+				144C97B2197D32F80026D426 /* CoreMotion.framework in Frameworks */,
+				144C97B0197D31E30026D426 /* libz.dylib in Frameworks */,
+				144C97AE197D31DB0026D426 /* OpenGLES.framework in Frameworks */,
+				144C9787197D2C690026D426 /* XCTest.framework in Frameworks */,
+				144C9789197D2C690026D426 /* UIKit.framework in Frameworks */,
+				144C9788197D2C690026D426 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		147EF68F19684145000D2E7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,11 +272,79 @@
 			name = Community;
 			sourceTree = "<group>";
 		};
+		144C978A197D2C690026D426 /* geniusx iOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				144C9798197D2F0B0026D426 /* genius */,
+				144C97A3197D2F0B0026D426 /* XCTestCase+AsyncTesting.h */,
+				144C97A4197D2F0B0026D426 /* XCTestCase+AsyncTesting.m */,
+				144C9790197D2C690026D426 /* geniusx_iOS_Tests.m */,
+				144C978B197D2C690026D426 /* Supporting Files */,
+			);
+			path = "geniusx iOS Tests";
+			sourceTree = "<group>";
+		};
+		144C978B197D2C690026D426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				144C978C197D2C690026D426 /* geniusx iOS Tests-Info.plist */,
+				144C978D197D2C690026D426 /* InfoPlist.strings */,
+				144C9792197D2C690026D426 /* geniusx iOS Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		144C9798197D2F0B0026D426 /* genius */ = {
+			isa = PBXGroup;
+			children = (
+				144C9799197D2F0B0026D426 /* ECS */,
+				144C979C197D2F0B0026D426 /* Resource */,
+				144C979E197D2F0B0026D426 /* Utility */,
+			);
+			path = genius;
+			sourceTree = "<group>";
+		};
+		144C9799197D2F0B0026D426 /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				144C979A197D2F0B0026D426 /* ECSManager_Tests.mm */,
+				144C979B197D2F0B0026D426 /* Entity_Tests.mm */,
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		144C979C197D2F0B0026D426 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				144C979D197D2F0B0026D426 /* Resource_AsyncTests.mm */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		144C979E197D2F0B0026D426 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				144C979F197D2F0B0026D426 /* Common_Tests.mm */,
+				144C97A1197D2F0B0026D426 /* GameConfig_Tests.mm */,
+				144C97A2197D2F0B0026D426 /* Localization_Tests.mm */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		144C97B8197D37F80026D426 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		147EF64D19684097000D2E7F = {
 			isa = PBXGroup;
 			children = (
+				144C97B8197D37F80026D426 /* Resources */,
 				14F494FC196B8E5900C743FB /* genius-x.h */,
 				14F49461196B8D7B00C743FB /* genius */,
+				144C978A197D2C690026D426 /* geniusx iOS Tests */,
 				147EF65819684097000D2E7F /* Frameworks */,
 				147EF65719684097000D2E7F /* Products */,
 			);
@@ -225,6 +355,7 @@
 			children = (
 				147EF69219684145000D2E7F /* libgeniusx iOS.a */,
 				147EF6B819684185000D2E7F /* libgeniusx Mac.a */,
+				144C9786197D2C690026D426 /* geniusx iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +363,11 @@
 		147EF65819684097000D2E7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				144C97B3197D33090026D426 /* libcocos2dx iOS.a */,
+				144C97B4197D33090026D426 /* libcocos2dx-extensions iOS.a */,
+				144C97B1197D32F80026D426 /* CoreMotion.framework */,
+				144C97AF197D31E30026D426 /* libz.dylib */,
+				144C97AD197D31DB0026D426 /* OpenGLES.framework */,
 				14F4945D196B863500C743FB /* Foundation.framework */,
 				1463A1A1196AE9F600B0056E /* libcocos2dx Mac.a */,
 				1463A19D196ADE0B00B0056E /* libcocos2dx-extensions iOS.a */,
@@ -416,6 +552,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		144C9785197D2C690026D426 /* geniusx iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 144C9797197D2C690026D426 /* Build configuration list for PBXNativeTarget "geniusx iOS Tests" */;
+			buildPhases = (
+				144C9782197D2C690026D426 /* Sources */,
+				144C9783197D2C690026D426 /* Frameworks */,
+				144C9784197D2C690026D426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144C9794197D2C690026D426 /* PBXTargetDependency */,
+			);
+			name = "geniusx iOS Tests";
+			productName = "geniusx iOS Tests";
+			productReference = 144C9786197D2C690026D426 /* geniusx iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		147EF69119684145000D2E7F /* geniusx iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 147EF6AE19684145000D2E7F /* Build configuration list for PBXNativeTarget "geniusx iOS" */;
@@ -458,6 +612,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Soulgame;
+				TargetAttributes = {
+					144C9785197D2C690026D426 = {
+						TestTargetID = 147EF69119684145000D2E7F;
+					};
+				};
 			};
 			buildConfigurationList = 147EF65119684097000D2E7F /* Build configuration list for PBXProject "genius-x" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -473,11 +632,38 @@
 			targets = (
 				147EF69119684145000D2E7F /* geniusx iOS */,
 				147EF6B719684185000D2E7F /* geniusx Mac */,
+				144C9785197D2C690026D426 /* geniusx iOS Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		144C9784197D2C690026D426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144C978F197D2C690026D426 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		144C9782197D2C690026D426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144C97AB197D2F0B0026D426 /* Localization_Tests.mm in Sources */,
+				144C97A8197D2F0B0026D426 /* Common_Tests.mm in Sources */,
+				144C9791197D2C690026D426 /* geniusx_iOS_Tests.m in Sources */,
+				144C97A5197D2F0B0026D426 /* ECSManager_Tests.mm in Sources */,
+				144C97AA197D2F0B0026D426 /* GameConfig_Tests.mm in Sources */,
+				144C97A7197D2F0B0026D426 /* Resource_AsyncTests.mm in Sources */,
+				144C97AC197D2F0B0026D426 /* XCTestCase+AsyncTesting.m in Sources */,
+				144C97A6197D2F0B0026D426 /* Entity_Tests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		147EF68E19684145000D2E7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,7 +736,111 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		144C9794197D2C690026D426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147EF69119684145000D2E7F /* geniusx iOS */;
+			targetProxy = 144C9793197D2C690026D426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		144C978D197D2C690026D426 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				144C978E197D2C690026D426 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		144C9795197D2C690026D426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "geniusx iOS Tests/geniusx iOS Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"COCOS2D_DEBUG=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+				);
+				INFOPLIST_FILE = "geniusx iOS Tests/geniusx iOS Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/elvis/Documents/genius-x/cocos2d/build/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-read_only_relocs",
+					suppress,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		144C9796197D2C690026D426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "geniusx iOS Tests/geniusx iOS Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+				);
+				INFOPLIST_FILE = "geniusx iOS Tests/geniusx iOS Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/elvis/Documents/genius-x/cocos2d/build/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-read_only_relocs",
+					suppress,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		147EF67719684097000D2E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -766,6 +1056,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		144C9797197D2C690026D426 /* Build configuration list for PBXNativeTarget "geniusx iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144C9795197D2C690026D426 /* Debug */,
+				144C9796197D2C690026D426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		147EF65119684097000D2E7F /* Build configuration list for PBXProject "genius-x" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

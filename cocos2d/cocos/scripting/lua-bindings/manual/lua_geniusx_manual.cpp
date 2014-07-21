@@ -29,7 +29,7 @@ static int tolua_geniusx_Component_registerScriptHandler(lua_State* tolua_S)
     
 #if COCOS2D_DEBUG >= 1
     tolua_Error tolua_err;
-	if (!tolua_isusertype(tolua_S,1,"GX.Com",0,&tolua_err)) goto tolua_lerror;
+	if (!tolua_isusertype(tolua_S,1,"gx.Com",0,&tolua_err)) goto tolua_lerror;
 #endif
     
     self = static_cast<GX::Com*>(tolua_tousertype(tolua_S,1,0));
@@ -78,7 +78,7 @@ static int tolua_geniusx_Component_unregisterScriptHandler(lua_State* tolua_S)
     
 #if COCOS2D_DEBUG >= 1
     tolua_Error tolua_err;
-	if (!tolua_isusertype(tolua_S,1,"GX.Com",0,&tolua_err)) goto tolua_lerror;
+	if (!tolua_isusertype(tolua_S,1,"gx.Com",0,&tolua_err)) goto tolua_lerror;
 #endif
     
     self = static_cast<GX::Com*>(tolua_tousertype(tolua_S,1,0));
@@ -118,7 +118,7 @@ static int tolua_geniusx_System_registerScriptHandler(lua_State* tolua_S)
     
 #if COCOS2D_DEBUG >= 1
     tolua_Error tolua_err;
-	if (!tolua_isusertype(tolua_S,1,"GX.System",0,&tolua_err)) goto tolua_lerror;
+	if (!tolua_isusertype(tolua_S,1,"gx.System",0,&tolua_err)) goto tolua_lerror;
 #endif
     
     self = static_cast<System*>(tolua_tousertype(tolua_S,1,0));
@@ -167,7 +167,7 @@ static int tolua_geniusx_System_unregisterScriptHandler(lua_State* tolua_S)
     
 #if COCOS2D_DEBUG >= 1
     tolua_Error tolua_err;
-	if (!tolua_isusertype(tolua_S,1,"GX.System",0,&tolua_err)) goto tolua_lerror;
+	if (!tolua_isusertype(tolua_S,1,"gx.System",0,&tolua_err)) goto tolua_lerror;
 #endif
     
     self = static_cast<System*>(tolua_tousertype(tolua_S,1,0));
@@ -208,7 +208,7 @@ static int tolua_cocos2d_Resource_updateResourceReferenceAsyncHandler(lua_State*
     
 #if COCOS2D_DEBUG>=1
     tolua_Error tolua_err;
-	if (!tolua_isusertype(tolua_S,1,"GX.Resource",0,&tolua_err)) goto tolua_lerror;
+	if (!tolua_isusertype(tolua_S,1,"gx.Resource",0,&tolua_err)) goto tolua_lerror;
 #endif
     
     self=static_cast<Resource*>(tolua_tousertype(tolua_S, 1, 0));
@@ -255,7 +255,7 @@ static int tolua_cocos2d_Resource_addResourceAsyncHandler(lua_State* tolua_S)
     
 #if COCOS2D_DEBUG>=1
     tolua_Error tolua_err;
-	if (!tolua_isusertype(tolua_S,1,"GX.Resource",0,&tolua_err));
+	if (!tolua_isusertype(tolua_S,1,"gx.Resource",0,&tolua_err));
 #endif
     
     self=static_cast<Resource*>(tolua_tousertype(tolua_S, 1, 0));
@@ -295,7 +295,7 @@ static int tolua_cocos2d_Resource_addResourceAsyncHandler(lua_State* tolua_S)
 
 static void extendComponent(lua_State* L)
 {
-    lua_pushstring(L, "GX.Com");
+    lua_pushstring(L, "gx.Com");
     lua_rawget(L, LUA_REGISTRYINDEX);
     if (lua_istable(L,-1))
     {
@@ -307,7 +307,7 @@ static void extendComponent(lua_State* L)
 
 static void extendSystem(lua_State* L)
 {
-    lua_pushstring(L, "GX.System");
+    lua_pushstring(L, "gx.System");
     lua_rawget(L, LUA_REGISTRYINDEX);
     if (lua_istable(L,-1))
     {
@@ -319,7 +319,7 @@ static void extendSystem(lua_State* L)
 
 static void extendResource(lua_State* L)
 {
-    lua_pushstring(L,"GX.Resource");
+    lua_pushstring(L,"gx.Resource");
     lua_rawget(L,LUA_REGISTRYINDEX);
     if (lua_istable(L,-1))
     {
