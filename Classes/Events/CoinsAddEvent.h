@@ -1,4 +1,4 @@
-//
+﻿//
 //  CoinsAddEvent.h
 //  sg
 //

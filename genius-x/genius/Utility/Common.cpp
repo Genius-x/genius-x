@@ -124,9 +124,9 @@ Color3B Color3BFromString(const std::string& str)
         strArray strs;
         CC_BREAK_IF(!splitWithForm(str, strs));
         
-        float r = (float) atof(strs[0].c_str());
-        float g = (float) atof(strs[1].c_str());
-        float b = (float) atof(strs[2].c_str());
+        GLubyte r = (GLubyte) atoi(strs[0].c_str());
+        GLubyte g = (GLubyte) atoi(strs[1].c_str());
+        GLubyte b = (GLubyte) atoi(strs[2].c_str());
         ret = cocos2d::Color3B(r, g,b);
     } while (0);
     
@@ -142,10 +142,10 @@ Color4B Color4BFromString(const std::string& str)
         strArray strs;
         CC_BREAK_IF(!splitWithForm(str, strs));
         
-        float r = (float) atof(strs[0].c_str());
-        float g = (float) atof(strs[1].c_str());
-        float b = (float) atof(strs[2].c_str());
-        float a = (float) atof(strs[3].c_str());
+        GLubyte r = (GLubyte) atoi(strs[0].c_str());
+        GLubyte g = (GLubyte) atoi(strs[1].c_str());
+        GLubyte b = (GLubyte) atoi(strs[2].c_str());
+        GLubyte a = (GLubyte) atoi(strs[3].c_str());
         ret = cocos2d::Color4B(r,g,b,a);
     } while (0);
     

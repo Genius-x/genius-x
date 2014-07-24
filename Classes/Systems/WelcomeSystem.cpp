@@ -1,4 +1,4 @@
-//
+﻿//
 //  WelcomeSystem.cpp
 //  sg
 //
@@ -35,13 +35,19 @@ void WelcomeSystem::onAttached()
         auto play=(cocos2d::ui::Button*)node->getNodeByName("play");
         if (play) {
             play->setTouchEnabled(true);
-            play->addTouchEventListener(this, toucheventselector(WelcomeSystem::onPlayClicked));
+			play->addTouchEventListener([this](Ref* pSender, Widget::TouchEventType type)
+			{
+				onPlayClicked(pSender, type);
+			});
         }
         
         auto shop=(cocos2d::ui::Button*)node->getNodeByName("shop");
         if (shop) {
             shop->setTouchEnabled(true);
-            shop->addTouchEventListener(this, toucheventselector(WelcomeSystem::onShopClicked));
+			play->addTouchEventListener([this](Ref* pSender, Widget::TouchEventType type)
+			{
+				onShopClicked(pSender, type);
+			});
         }
     }
 }
@@ -61,12 +67,12 @@ void WelcomeSystem::onComsChanged()
     
 }
 
-void WelcomeSystem::onPlayClicked(cocos2d::Ref *pSender, cocos2d::ui::TouchEventType type)
+void WelcomeSystem::onPlayClicked(cocos2d::Ref *pSender,  cocos2d::ui::Widget::TouchEventType type)
 {
     cocos2d::Director::getInstance()->replaceScene(LevelScene::scene());
 }
 
-void WelcomeSystem::onShopClicked(cocos2d::Ref *pSender, cocos2d::ui::TouchEventType type)
+void WelcomeSystem::onShopClicked(cocos2d::Ref *pSender,  cocos2d::ui::Widget::TouchEventType type)
 {
     //cocos2d::Director::getInstance()->replaceScene(ShopScene::scene());
 }

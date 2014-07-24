@@ -1,4 +1,4 @@
-//
+﻿//
 //  CoinSystem.h
 //  sg
 //
