@@ -30,8 +30,8 @@ protected:
     virtual void update(float dt) override;
     virtual void onComsChanged() override;
     
-    void onPlayClicked(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
-    void onShopClicked(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEventType type);
+    void onPlayClicked(cocos2d::Ref *pSender, cocos2d::ui::TouchEventType type);
+    void onShopClicked(cocos2d::Ref *pSender, cocos2d::ui::TouchEventType type);
 };
 
 #endif /* defined(__sg__WelcomeSystem__) */
