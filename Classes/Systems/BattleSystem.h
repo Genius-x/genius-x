@@ -80,10 +80,10 @@ private:
     
     Scene* _scene;
     
-    float _currentRadius=70;
-    float _diffRadius=40;
-    float _currentAngle=-45;
-    float _diffAngle=45;
+    float _currentRadius;
+    float _diffRadius;
+    float _currentAngle;
+    float _diffAngle;
     Point _prevois;
 };
 
