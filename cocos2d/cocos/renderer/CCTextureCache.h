@@ -192,6 +192,7 @@ public:
 private:
     void addImageAsyncCallBack(float dt);
     void loadImage();
+    std::string __getRealKey(const std::string& filename,bool& isETC,std::string& etcAlphaPath);
 
 public:
     struct AsyncStruct

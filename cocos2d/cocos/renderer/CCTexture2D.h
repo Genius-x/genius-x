@@ -348,6 +348,13 @@ public:
     void setGLProgram(GLProgram* program);
     GLProgram* getGLProgram() const;
     
+    void setAlphaTexture(std::string alphaTexture){_alphaTexture=alphaTexture;}
+    std::string getAlphaTexture(){return _alphaTexture;}
+    
+    void setHasAlphaTexture(bool alphaTexture){_hasAlpha=alphaTexture;}
+    bool getHasAlphaTexture(){return _hasAlpha;}
+
+    
 public:
     static const PixelFormatInfoMap& getPixelFormatInfoMap();
     
@@ -433,6 +440,10 @@ protected:
     static const PixelFormatInfoMap _pixelFormatInfoTables;
 
     bool _antialiasEnabled;
+    
+    /** if the format is ETC1, this field record the alpha texture,other wise is nullptr. */
+    std::string _alphaTexture;
+    bool _hasAlpha;
 };
 
 

@@ -31,9 +31,20 @@ precision lowp float;
 varying vec4 v_fragmentColor;
 varying vec2 v_texCoord;
 
+uniform float u_hasAlpha;
+                                                          
 void main()
 {
-    gl_FragColor = v_fragmentColor * texture2D(CC_Texture0, v_texCoord);
+    if(u_hasAlpha>0.)
+    {
+        vec4 color = texture2D(CC_Texture0,v_texCoord);
+        color.a = texture2D(CC_Texture1,v_texCoord).r;
+        gl_FragColor = v_fragmentColor * color;
+    }
+    else
+    {
+        gl_FragColor = v_fragmentColor * texture2D(CC_Texture0, v_texCoord);
+    }
 }
 );
 

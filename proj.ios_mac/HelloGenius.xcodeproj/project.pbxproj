@@ -212,6 +212,13 @@
 			remoteGlobalIDString = 147EF6B819684185000D2E7F;
 			remoteInfo = "geniusx Mac";
 		};
+		14C549FB19931B98009C22CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147EF68819684106000D2E7F /* genius-x.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 144C9786197D2C690026D426;
+			remoteInfo = "geniusx iOS Tests";
+		};
 		14FDB59E1978B4B700B2A5B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14FDB5971978B4B700B2A5B2 /* cocos2d_lua_bindings.xcodeproj */;
@@ -592,6 +599,7 @@
 			children = (
 				14AC948D196AF7210039CCA3 /* libgeniusx iOS.a */,
 				14AC948F196AF7210039CCA3 /* libgeniusx Mac.a */,
+				14C549FC19931B98009C22CA /* geniusx iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1055,6 +1063,13 @@
 			fileType = "compiled.mach-o.dylib";
 			path = "libgeniusx Mac.a";
 			remoteRef = 14AC948E196AF7210039CCA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14C549FC19931B98009C22CA /* geniusx iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "geniusx iOS Tests.xctest";
+			remoteRef = 14C549FB19931B98009C22CA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		14FDB59F1978B4B700B2A5B2 /* libluabindings Mac.a */ = {

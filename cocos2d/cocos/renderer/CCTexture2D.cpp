@@ -437,7 +437,9 @@ Texture2D::Texture2D()
 , _hasMipmaps(false)
 , _shaderProgram(nullptr)
 , _antialiasEnabled(true)
+, _hasAlpha(false)
 {
+    _alphaTexture="";
 }
 
 Texture2D::~Texture2D()

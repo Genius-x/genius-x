@@ -30,12 +30,17 @@
 #include "renderer/CCGLProgramState.h"
 #include "xxhash.h"
 
+#include "renderer/CCTexture2D.h"
+#include "renderer/CCTextureCache.h"
+
+#include "cocos2d.h"
+
 NS_CC_BEGIN
 
 
 QuadCommand::QuadCommand()
 :_materialID(0)
-,_textureID(0)
+,_textureID(nullptr)
 ,_glProgramState(nullptr)
 ,_blendType(BlendFunc::DISABLE)
 ,_quads(nullptr)
@@ -44,7 +49,7 @@ QuadCommand::QuadCommand()
     _type = RenderCommand::Type::QUAD_COMMAND;
 }
 
-void QuadCommand::init(float globalOrder, GLuint textureID, GLProgramState* glProgramState, BlendFunc blendType, V3F_C4B_T2F_Quad* quad, ssize_t quadCount, const Mat4 &mv)
+void QuadCommand::init(float globalOrder, Texture2D* textureID, GLProgramState* glProgramState, BlendFunc blendType, V3F_C4B_T2F_Quad* quad, ssize_t quadCount, const Mat4 &mv)
 {
     CCASSERT(glProgramState, "Invalid GLProgramState");
     CCASSERT(glProgramState->getVertexAttribsFlags() == 0, "No custom attributes are supported in QuadCommand");
@@ -56,7 +61,7 @@ void QuadCommand::init(float globalOrder, GLuint textureID, GLProgramState* glPr
 
     _mv = mv;
 
-    if( _textureID != textureID || _blendType.src != blendType.src || _blendType.dst != blendType.dst || _glProgramState != glProgramState) {
+    if(_textureID!= textureID||_blendType.src != blendType.src || _blendType.dst != blendType.dst||_glProgramState != glProgramState) {
 
         _textureID = textureID;
         _blendType = blendType;
@@ -80,7 +85,7 @@ void QuadCommand::generateMaterialID()
     else
     {
         int glProgram = (int)_glProgramState->getGLProgram()->getProgram();
-        int intArray[4] = { glProgram, (int)_textureID, (int)_blendType.src, (int)_blendType.dst};
+        int intArray[4] = { glProgram, (int)_textureID->getName(), (int)_blendType.src, (int)_blendType.dst};
 
         _materialID = XXH32((const void*)intArray, sizeof(intArray), 0);
     }
@@ -89,12 +94,34 @@ void QuadCommand::generateMaterialID()
 void QuadCommand::useMaterial() const
 {
     //Set texture
-    GL::bindTexture2D(_textureID);
-
+    glActiveTexture(GL_TEXTURE0 + 0);
+    GL::bindTexture2D(_textureID->getName());
+    
     //set blend mode
     GL::blendFunc(_blendType.src, _blendType.dst);
 
+    if (_textureID->getHasAlphaTexture()) {
+        
+    auto alpha=Director::getInstance()->getTextureCache()->addImage(_textureID->getAlphaTexture());
+        _glProgramState->setUniformTexture("CC_Texture1", alpha->getName());
+    }
     _glProgramState->apply(_mv);
+    if (_textureID->getHasAlphaTexture()) {
+        //_glProgramState->setUniformFloat("u_hasAlpha", 1.0f);
+        
+        auto loc =glGetUniformLocation(_glProgramState->getGLProgram()->getProgram(), "CC_Texture1");
+        glUniform1i(loc,1);
+        auto alpha=Director::getInstance()->getTextureCache()->addImage(_textureID->getAlphaTexture());
+        glActiveTexture(GL_TEXTURE0 + 1);
+        glBindTexture(GL_TEXTURE_2D, alpha->getName());
+    }
+    else {
+        //_glProgramState->setUniformFloat("u_hasAlpha", 0.0f);
+        
+    }
+    
+    auto locHasAlpha=glGetUniformLocation(_glProgramState->getGLProgram()->getProgram(),"u_hasAlpha");
+    glUniform1f(locHasAlpha, _textureID->getHasAlphaTexture()?1.0f:0.0f);
 }
 
 NS_CC_END

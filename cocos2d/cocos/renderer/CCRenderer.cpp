@@ -488,6 +488,7 @@ void Renderer::drawBatchedQuads()
 
             //Use new material
             cmd->useMaterial();
+        
             _lastMaterialID = newMaterialID;
         }
 

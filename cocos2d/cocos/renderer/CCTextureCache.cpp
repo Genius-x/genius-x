@@ -313,6 +313,41 @@ void TextureCache::addImageAsyncCallBack(float dt)
     }
 }
 
+std::string TextureCache::__getRealKey(const std::string& filename,bool& isETC,std::string& etcAlphaPath)
+{
+    isETC=false;
+    
+    auto fullpath=FileUtils::getInstance()->fullPathForFilename(filename);
+    if (!FileUtils::getInstance()->isFileExist(fullpath)) {
+        size_t dot = filename.find_last_of(".");
+        if(dot!=std::string::npos){
+            auto name=filename.substr(0,dot);
+            auto pvrname=name;
+            pvrname.append(".pvr");
+            //pvr
+            auto pvrpath=FileUtils::getInstance()->fullPathForFilename(pvrname);
+            if (FileUtils::getInstance()->isFileExist(pvrpath)) {
+                return pvrpath;
+            }
+            
+            auto etcname=name;
+            etcname.append(".pkm");
+            auto etcpath=FileUtils::getInstance()->fullPathForFilename(etcname);
+            if (FileUtils::getInstance()->isFileExist(etcpath)) {
+                isETC=true;
+                etcAlphaPath=name.append("_alpha.pkm");
+            }
+            
+            return etcpath;
+        }
+        
+        return "";
+    }
+    else {
+        return fullpath;
+    }
+}
+
 Texture2D * TextureCache::addImage(const std::string &path)
 {
     Texture2D * texture = nullptr;
@@ -321,11 +356,16 @@ Texture2D * TextureCache::addImage(const std::string &path)
     // MUTEX:
     // Needed since addImageAsync calls this method from a different thread
 
-    std::string fullpath = FileUtils::getInstance()->fullPathForFilename(path);
+    
+    
+    bool isETC;
+    std::string etcAlphaPath;
+    std::string fullpath = __getRealKey(path,isETC,etcAlphaPath);
     if (fullpath.size() == 0)
     {
         return nullptr;
     }
+    
     auto it = _textures.find(fullpath);
     if( it != _textures.end() )
         texture = it->second;
@@ -361,6 +401,16 @@ Texture2D * TextureCache::addImage(const std::string &path)
 
     CC_SAFE_RELEASE(image);
 
+    //如果纹理为ETC1格式，则加载对应的Alpha纹理
+    if(isETC){
+        auto alphaPath=FileUtils::getInstance()->fullPathForFilename(etcAlphaPath);
+        if(!alphaPath.empty()){
+            texture->setHasAlphaTexture(true);
+            texture->setAlphaTexture(alphaPath);
+            cocos2d::Director::getInstance()->getTextureCache()->addImage(alphaPath);
+        }
+    }
+    
     return texture;
 }
 
