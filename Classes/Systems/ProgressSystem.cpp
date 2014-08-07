@@ -1,4 +1,4 @@
-//
+﻿//
 //  ProgressSystem.cpp
 //  sg
 //

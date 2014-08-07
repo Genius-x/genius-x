@@ -40,8 +40,8 @@ void CoinSystem::update(float dt)
         getNode()->addChild(coins);
         coins->setPosition(cocos2d::Point(getNode()->getContentSize().width/2,getNode()->getContentSize().height/2));
         
-        auto move=cocos2d::MoveBy::create(0.3, cocos2d::Point(0,50));
-        auto fade=cocos2d::FadeOut::create(0.3);
+        auto move=cocos2d::MoveBy::create(0.3f, cocos2d::Point(0.f,50.f));
+        auto fade=cocos2d::FadeOut::create(0.3f);
         coins->runAction(cocos2d::Sequence::create(cocos2d::Spawn::create(move,fade, NULL),cocos2d::RemoveSelf::create(),NULL));
     }
 }

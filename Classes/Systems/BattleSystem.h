@@ -1,4 +1,4 @@
-//
+﻿//
 //  BattleSystem.h
 //  sg
 //

@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
  Copyright (c) 2014 Elvis Qin
  Copyright (c) 2014 Soulgame Inc.
  
@@ -181,7 +181,7 @@ void FTUEManager::finishFTUE(int type,bool needKeepInFTUE/*=false*/)
     _progress[_currentData->rootId]=index;
     
     //save to server
-    GX:GameSystem::getInstance()->saveFTUEToServer(_currentData);
+    GameSystem::getInstance()->saveFTUEToServer(_currentData);
     
 
     //保存到本地以容错

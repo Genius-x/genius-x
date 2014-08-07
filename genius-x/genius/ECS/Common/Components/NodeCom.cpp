@@ -152,7 +152,7 @@ void NodeCom::initWithMap(rapidjson::Value& value)
                     }
                     
                     if (nodeValue.HasMember("globalOrder")) {
-                        child->setGlobalZOrder(nodeValue["globalOrder"].GetInt());
+                        child->setGlobalZOrder((float)nodeValue["globalOrder"].GetInt());
                     }
                     
                     if (nodeValue.HasMember("visible")) {
@@ -205,7 +205,7 @@ cocos2d::Label* NodeCom::initLabel(rapidjson::Value& value)
     cocos2d::Value s(GX::Localization::getInstance()->getStr(value["fontSize"].GetString()));
     int size=s.asInt();
     
-    cocos2d::Label* label=cocos2d::Label::createWithTTF(text, font, size);
+    cocos2d::Label* label=cocos2d::Label::createWithTTF(text, font, (float)size);
     
     if (value.HasMember("fontColor")) {
         label->setTextColor(Color4BFromString(value["fontColor"].GetString()));
@@ -255,7 +255,7 @@ cocos2d::ui::Button* NodeCom::initButton(rapidjson::Value& value)
     }
     
     if (value.HasMember("titleSize")) {
-        button->setTitleFontSize(value["titleSize"].GetInt());
+        button->setTitleFontSize((float)value["titleSize"].GetInt());
     }
     
     if (value.HasMember("titleColor")) {

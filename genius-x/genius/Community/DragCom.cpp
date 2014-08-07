@@ -245,7 +245,7 @@ void DragSystem::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *unused_even
             }
             else if(_drag->_globalZOrderChanged) {
                 _originZOrder=_drag->_globalZOrder;
-                getNode()->setGlobalZOrder(_originZOrder);
+                getNode()->setGlobalZOrder((float)_originZOrder);
             }
             
             _originPosition=getNode()->getPosition();
@@ -287,7 +287,7 @@ void DragSystem::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *unused_even
                 getNode()->setLocalZOrder(_originZOrder);
             }
             else if (_drag->_globalZOrderChanged){
-                getNode()->setGlobalZOrder(_originZOrder);
+                getNode()->setGlobalZOrder((float)_originZOrder);
             }
             
             setTouchEnabled(true);

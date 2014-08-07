@@ -1,4 +1,4 @@
-//
+﻿//
 //  BattleSystem.cpp
 //  sg
 //
@@ -56,13 +56,13 @@ void BattleSystem::addCoin(cocos2d::EventCustom* event)
 	((Label*)node->getNodeByName("coins_number"))->setString(StringUtils::format("%d",_player->coins));
 
 	if (coin->count>0) {
-		ScaleTo* to=ScaleTo::create(0.3, 1.5);
-		ScaleTo* back=ScaleTo::create(0.3, 1);
+		ScaleTo* to=ScaleTo::create(0.3f, 1.5f);
+		ScaleTo* back=ScaleTo::create(0.3f, 1.f);
 		node->getNodeByName("coin_bg")->runAction(Sequence::create(to,back, NULL));
 	}
 	else {
-		TintTo* to=TintTo::create(0.3, 255, 0, 0);
-		TintTo* back=TintTo::create(0.3, 255, 255, 255);
+		TintTo* to=TintTo::create(0.3f, 255, 0, 0);
+		TintTo* back=TintTo::create(0.3f, 255, 255, 255);
 		node->getNodeByName("coin_bg")->runAction(Sequence::create(to,back, NULL));
 	}
 }
