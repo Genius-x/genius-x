@@ -17,10 +17,10 @@ Genius-x最早于2014年在北京魂世界(SoulGame)公司的手游项目中使�
 
 怎样使用？
 -------------
-1，将根目录的genius-x目录拷贝至你的游戏目录中同cocos2d同级的目录，因为Genius-x会引用Cocos2d-x工程。
-2，将genius-x/build目录下对应平台的工程文件添加引用至你的项目中。
-3，添加搜索路径，这样才能找到头文件引用，例如在XCode中设置为$(SRCROOT)/../genius-x/genius。
-4，添加静态库链接。
+1. 将根目录的genius-x目录拷贝至你的游戏目录中同cocos2d同级的目录，因为Genius-x会引用Cocos2d-x工程。
+2. 将genius-x/build目录下对应平台的工程文件添加引用至你的项目中。
+3. 添加搜索路径，这样才能找到头文件引用，例如在XCode中设置为$(SRCROOT)/../genius-x/genius。
+4. 添加静态库链接。
 
 特性
 ---------
