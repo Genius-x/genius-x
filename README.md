@@ -9,10 +9,10 @@ Genius-x最早于2014年在北京魂世界(SoulGame)公司的手游项目中使�
 
 参考资料
 ========
-# 《游戏引擎架构》
-# 《我所理解的Cocos2d-x》
-# 《游戏编程精粹(第6卷第4章)》
-# 《A Data-Driven Game Object System》
+1. 《游戏引擎架构》
+2. 《我所理解的Cocos2d-x》
+3. 《游戏编程精粹(第6卷第4章)》
+4. 《A Data-Driven Game Object System》
 
 
 怎样使用？
