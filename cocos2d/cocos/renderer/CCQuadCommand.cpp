@@ -99,25 +99,14 @@ void QuadCommand::useMaterial() const
     
     //set blend mode
     GL::blendFunc(_blendType.src, _blendType.dst);
-
-    if (_textureID->getHasAlphaTexture()) {
-        
-    auto alpha=Director::getInstance()->getTextureCache()->addImage(_textureID->getAlphaTexture());
-        _glProgramState->setUniformTexture("CC_Texture1", alpha->getName());
-    }
+     
     _glProgramState->apply(_mv);
     if (_textureID->getHasAlphaTexture()) {
-        //_glProgramState->setUniformFloat("u_hasAlpha", 1.0f);
-        
         auto loc =glGetUniformLocation(_glProgramState->getGLProgram()->getProgram(), "CC_Texture1");
         glUniform1i(loc,1);
         auto alpha=Director::getInstance()->getTextureCache()->addImage(_textureID->getAlphaTexture());
         glActiveTexture(GL_TEXTURE0 + 1);
         glBindTexture(GL_TEXTURE_2D, alpha->getName());
-    }
-    else {
-        //_glProgramState->setUniformFloat("u_hasAlpha", 0.0f);
-        
     }
     
     auto locHasAlpha=glGetUniformLocation(_glProgramState->getGLProgram()->getProgram(),"u_hasAlpha");

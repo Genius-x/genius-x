@@ -27,6 +27,7 @@
 #include "renderer/ccGLStateCache.h"
 #include "renderer/CCTextureAtlas.h"
 #include "renderer/CCTexture2D.h"
+#include "cocos2d.h"
 
 NS_CC_BEGIN
 
@@ -63,9 +64,22 @@ void BatchCommand::execute()
     // Set material
     _shader->use();
     _shader->setUniformsForBuiltins(_mv);
+    glActiveTexture(GL_TEXTURE0 + 0);
     GL::bindTexture2D(_textureID);
     GL::blendFunc(_blendType.src, _blendType.dst);
 
+    
+    if ( _textureAtlas->getTexture()->getHasAlphaTexture()) {
+        auto loc =glGetUniformLocation(_shader->getProgram(), "CC_Texture1");
+        glUniform1i(loc,1);
+        auto alpha=Director::getInstance()->getTextureCache()->addImage(_textureAtlas->getTexture()->getAlphaTexture());
+        glActiveTexture(GL_TEXTURE0 + 1);
+        glBindTexture(GL_TEXTURE_2D, alpha->getName());
+    }
+    
+    auto locHasAlpha=glGetUniformLocation(_shader->getProgram(),"u_hasAlpha");
+    glUniform1f(locHasAlpha,  _textureAtlas->getTexture()->getHasAlphaTexture()?1.0f:0.0f);
+    
     // Draw
     _textureAtlas->drawQuads();
 }
