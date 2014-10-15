@@ -97,6 +97,13 @@ GX::Com* Entity::getComByType(const std::string& type)
     return nullptr;
 }
 
+void Entity::sendEvent(const std::string& eventName)
+{
+    for (auto iter=_systems.begin(); iter!=_systems.end();iter++) {
+        iter->second->onEntityEvent(eventName);
+    }
+}
+
 void Entity::removeCom(const std::string& type)
 {
     Com* com=getComByType(type);

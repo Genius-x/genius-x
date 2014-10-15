@@ -162,4 +162,7 @@ int register_all_geniusx(lua_State* tolua_S);
 
 
 
+
+
+
 #endif // __geniusx_h__

@@ -2246,6 +2246,52 @@ int lua_cocos2dx_Texture2D_getMaxT(lua_State* tolua_S)
 
     return 0;
 }
+int lua_cocos2dx_Texture2D_setAlphaTexture(lua_State* tolua_S)
+{
+    int argc = 0;
+    cocos2d::Texture2D* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"cc.Texture2D",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (cocos2d::Texture2D*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_Texture2D_setAlphaTexture'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 1) 
+    {
+        std::string arg0;
+
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0);
+        if(!ok)
+            return 0;
+        cobj->setAlphaTexture(arg0);
+        return 0;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "setAlphaTexture",argc, 1);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_Texture2D_setAlphaTexture'.",&tolua_err);
+#endif
+
+    return 0;
+}
 int lua_cocos2dx_Texture2D_getStringForFormat(lua_State* tolua_S)
 {
     int argc = 0;
@@ -2906,6 +2952,50 @@ int lua_cocos2dx_Texture2D_getContentSize(lua_State* tolua_S)
 
     return 0;
 }
+int lua_cocos2dx_Texture2D_getHasAlphaTexture(lua_State* tolua_S)
+{
+    int argc = 0;
+    cocos2d::Texture2D* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"cc.Texture2D",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (cocos2d::Texture2D*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_Texture2D_getHasAlphaTexture'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+            return 0;
+        bool ret = cobj->getHasAlphaTexture();
+        tolua_pushboolean(tolua_S,(bool)ret);
+        return 1;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "getHasAlphaTexture",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_Texture2D_getHasAlphaTexture'.",&tolua_err);
+#endif
+
+    return 0;
+}
 int lua_cocos2dx_Texture2D_setAliasTexParameters(lua_State* tolua_S)
 {
     int argc = 0;
@@ -3031,6 +3121,50 @@ int lua_cocos2dx_Texture2D_generateMipmap(lua_State* tolua_S)
 #if COCOS2D_DEBUG >= 1
     tolua_lerror:
     tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_Texture2D_generateMipmap'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_Texture2D_getAlphaTexture(lua_State* tolua_S)
+{
+    int argc = 0;
+    cocos2d::Texture2D* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"cc.Texture2D",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (cocos2d::Texture2D*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_Texture2D_getAlphaTexture'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+            return 0;
+        std::string ret = cobj->getAlphaTexture();
+        tolua_pushcppstring(tolua_S,ret);
+        return 1;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "getAlphaTexture",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_Texture2D_getAlphaTexture'.",&tolua_err);
 #endif
 
     return 0;
@@ -3437,6 +3571,52 @@ int lua_cocos2dx_Texture2D_setMaxS(lua_State* tolua_S)
 
     return 0;
 }
+int lua_cocos2dx_Texture2D_setHasAlphaTexture(lua_State* tolua_S)
+{
+    int argc = 0;
+    cocos2d::Texture2D* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"cc.Texture2D",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (cocos2d::Texture2D*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_Texture2D_setHasAlphaTexture'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 1) 
+    {
+        bool arg0;
+
+        ok &= luaval_to_boolean(tolua_S, 2,&arg0);
+        if(!ok)
+            return 0;
+        cobj->setHasAlphaTexture(arg0);
+        return 0;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "setHasAlphaTexture",argc, 1);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_Texture2D_setHasAlphaTexture'.",&tolua_err);
+#endif
+
+    return 0;
+}
 int lua_cocos2dx_Texture2D_setDefaultAlphaPixelFormat(lua_State* tolua_S)
 {
     int argc = 0;
@@ -3580,6 +3760,7 @@ int lua_register_cocos2dx_Texture2D(lua_State* tolua_S)
     tolua_beginmodule(tolua_S,"Texture2D");
         tolua_function(tolua_S,"new",lua_cocos2dx_Texture2D_constructor);
         tolua_function(tolua_S,"getMaxT",lua_cocos2dx_Texture2D_getMaxT);
+        tolua_function(tolua_S,"setAlphaTexture",lua_cocos2dx_Texture2D_setAlphaTexture);
         tolua_function(tolua_S,"getStringForFormat",lua_cocos2dx_Texture2D_getStringForFormat);
         tolua_function(tolua_S,"initWithImage",lua_cocos2dx_Texture2D_initWithImage);
         tolua_function(tolua_S,"getMaxS",lua_cocos2dx_Texture2D_getMaxS);
@@ -3592,9 +3773,11 @@ int lua_register_cocos2dx_Texture2D(lua_State* tolua_S)
         tolua_function(tolua_S,"setMaxT",lua_cocos2dx_Texture2D_setMaxT);
         tolua_function(tolua_S,"drawInRect",lua_cocos2dx_Texture2D_drawInRect);
         tolua_function(tolua_S,"getContentSize",lua_cocos2dx_Texture2D_getContentSize);
+        tolua_function(tolua_S,"getHasAlphaTexture",lua_cocos2dx_Texture2D_getHasAlphaTexture);
         tolua_function(tolua_S,"setAliasTexParameters",lua_cocos2dx_Texture2D_setAliasTexParameters);
         tolua_function(tolua_S,"setAntiAliasTexParameters",lua_cocos2dx_Texture2D_setAntiAliasTexParameters);
         tolua_function(tolua_S,"generateMipmap",lua_cocos2dx_Texture2D_generateMipmap);
+        tolua_function(tolua_S,"getAlphaTexture",lua_cocos2dx_Texture2D_getAlphaTexture);
         tolua_function(tolua_S,"getDescription",lua_cocos2dx_Texture2D_getDescription);
         tolua_function(tolua_S,"getPixelFormat",lua_cocos2dx_Texture2D_getPixelFormat);
         tolua_function(tolua_S,"setGLProgram",lua_cocos2dx_Texture2D_setGLProgram);
@@ -3604,6 +3787,7 @@ int lua_register_cocos2dx_Texture2D(lua_State* tolua_S)
         tolua_function(tolua_S,"getGLProgram",lua_cocos2dx_Texture2D_getGLProgram);
         tolua_function(tolua_S,"hasMipmaps",lua_cocos2dx_Texture2D_hasMipmaps);
         tolua_function(tolua_S,"setMaxS",lua_cocos2dx_Texture2D_setMaxS);
+        tolua_function(tolua_S,"setHasAlphaTexture",lua_cocos2dx_Texture2D_setHasAlphaTexture);
         tolua_function(tolua_S,"setDefaultAlphaPixelFormat", lua_cocos2dx_Texture2D_setDefaultAlphaPixelFormat);
         tolua_function(tolua_S,"getDefaultAlphaPixelFormat", lua_cocos2dx_Texture2D_getDefaultAlphaPixelFormat);
         tolua_function(tolua_S,"PVRImagesHavePremultipliedAlpha", lua_cocos2dx_Texture2D_PVRImagesHavePremultipliedAlpha);

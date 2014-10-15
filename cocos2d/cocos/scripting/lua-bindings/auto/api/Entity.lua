@@ -28,6 +28,11 @@
 -- @param self
         
 --------------------------------
+-- @function [parent=#Entity] sendEvent 
+-- @param self
+-- @param #string str
+        
+--------------------------------
 -- @function [parent=#Entity] getId 
 -- @param self
 -- @return int#int ret (return value: int)

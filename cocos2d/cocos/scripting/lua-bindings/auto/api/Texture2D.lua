@@ -9,6 +9,11 @@
 -- @return float#float ret (return value: float)
         
 --------------------------------
+-- @function [parent=#Texture2D] setAlphaTexture 
+-- @param self
+-- @param #string str
+        
+--------------------------------
 -- @function [parent=#Texture2D] getStringForFormat 
 -- @param self
 -- @return char#char ret (return value: char)
@@ -89,6 +94,11 @@
 -- @return size_table#size_table ret (return value: size_table)
         
 --------------------------------
+-- @function [parent=#Texture2D] getHasAlphaTexture 
+-- @param self
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
 -- @function [parent=#Texture2D] setAliasTexParameters 
 -- @param self
         
@@ -99,6 +109,11 @@
 --------------------------------
 -- @function [parent=#Texture2D] generateMipmap 
 -- @param self
+        
+--------------------------------
+-- @function [parent=#Texture2D] getAlphaTexture 
+-- @param self
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- @function [parent=#Texture2D] getDescription 
@@ -144,6 +159,11 @@
 -- @function [parent=#Texture2D] setMaxS 
 -- @param self
 -- @param #float float
+        
+--------------------------------
+-- @function [parent=#Texture2D] setHasAlphaTexture 
+-- @param self
+-- @param #bool bool
         
 --------------------------------
 -- @function [parent=#Texture2D] setDefaultAlphaPixelFormat 

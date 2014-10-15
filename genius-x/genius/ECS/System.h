@@ -141,6 +141,11 @@ protected:
      */
     virtual void onComsChanged();
 
+    /**
+     * 来自Entity发送的事件
+     */
+    virtual void onEntityEvent(const std::string& eventName);
+
 
     virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *unused_event);
     virtual void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *unused_event);
@@ -196,16 +201,21 @@ class SystemScriptData:public Ref
 public:
     SystemScriptData(float delta=0.0)
     :_delta(delta)
+    ,_string("")
     {
         
     }
-    
+
     float getDelta(){return _delta;}
+
+    void setString(const std::string& str){_string=str;}
+    std::string getString(){return _string;}
     
     void setSystem(System* sys){_clone=sys;}
     System* getSystem(){return _clone;}
     
 private:
+    std::string _string;
     float _delta;
     System* _clone;
 };

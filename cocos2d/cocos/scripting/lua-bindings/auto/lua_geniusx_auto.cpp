@@ -2069,50 +2069,6 @@ int lua_geniusx_SystemScriptData_setSystem(lua_State* tolua_S)
 
     return 0;
 }
-int lua_geniusx_SystemScriptData_getSystem(lua_State* tolua_S)
-{
-    int argc = 0;
-    GX::SystemScriptData* cobj = nullptr;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertype(tolua_S,1,"gx.SystemScriptData",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    cobj = (GX::SystemScriptData*)tolua_tousertype(tolua_S,1,0);
-
-#if COCOS2D_DEBUG >= 1
-    if (!cobj) 
-    {
-        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_geniusx_SystemScriptData_getSystem'", nullptr);
-        return 0;
-    }
-#endif
-
-    argc = lua_gettop(tolua_S)-1;
-    if (argc == 0) 
-    {
-        if(!ok)
-            return 0;
-        GX::System* ret = cobj->getSystem();
-        object_to_luaval<GX::System>(tolua_S, "gx.System",(GX::System*)ret);
-        return 1;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "getSystem",argc, 0);
-    return 0;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_geniusx_SystemScriptData_getSystem'.",&tolua_err);
-#endif
-
-    return 0;
-}
 int lua_geniusx_SystemScriptData_getDelta(lua_State* tolua_S)
 {
     int argc = 0;
@@ -2153,6 +2109,140 @@ int lua_geniusx_SystemScriptData_getDelta(lua_State* tolua_S)
 #if COCOS2D_DEBUG >= 1
     tolua_lerror:
     tolua_error(tolua_S,"#ferror in function 'lua_geniusx_SystemScriptData_getDelta'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_geniusx_SystemScriptData_getString(lua_State* tolua_S)
+{
+    int argc = 0;
+    GX::SystemScriptData* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"gx.SystemScriptData",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GX::SystemScriptData*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_geniusx_SystemScriptData_getString'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+            return 0;
+        std::string ret = cobj->getString();
+        tolua_pushcppstring(tolua_S,ret);
+        return 1;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "getString",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_geniusx_SystemScriptData_getString'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_geniusx_SystemScriptData_setString(lua_State* tolua_S)
+{
+    int argc = 0;
+    GX::SystemScriptData* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"gx.SystemScriptData",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GX::SystemScriptData*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_geniusx_SystemScriptData_setString'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 1) 
+    {
+        std::string arg0;
+
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0);
+        if(!ok)
+            return 0;
+        cobj->setString(arg0);
+        return 0;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "setString",argc, 1);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_geniusx_SystemScriptData_setString'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_geniusx_SystemScriptData_getSystem(lua_State* tolua_S)
+{
+    int argc = 0;
+    GX::SystemScriptData* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"gx.SystemScriptData",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GX::SystemScriptData*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_geniusx_SystemScriptData_getSystem'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+            return 0;
+        GX::System* ret = cobj->getSystem();
+        object_to_luaval<GX::System>(tolua_S, "gx.System",(GX::System*)ret);
+        return 1;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "getSystem",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_geniusx_SystemScriptData_getSystem'.",&tolua_err);
 #endif
 
     return 0;
@@ -2219,8 +2309,10 @@ int lua_register_geniusx_SystemScriptData(lua_State* tolua_S)
     tolua_beginmodule(tolua_S,"SystemScriptData");
         tolua_function(tolua_S,"new",lua_geniusx_SystemScriptData_constructor);
         tolua_function(tolua_S,"setSystem",lua_geniusx_SystemScriptData_setSystem);
-        tolua_function(tolua_S,"getSystem",lua_geniusx_SystemScriptData_getSystem);
         tolua_function(tolua_S,"getDelta",lua_geniusx_SystemScriptData_getDelta);
+        tolua_function(tolua_S,"getString",lua_geniusx_SystemScriptData_getString);
+        tolua_function(tolua_S,"setString",lua_geniusx_SystemScriptData_setString);
+        tolua_function(tolua_S,"getSystem",lua_geniusx_SystemScriptData_getSystem);
     tolua_endmodule(tolua_S);
     std::string typeName = typeid(GX::SystemScriptData).name();
     g_luaType[typeName] = "gx.SystemScriptData";
@@ -2505,6 +2597,52 @@ int lua_geniusx_Entity_removeAllComs(lua_State* tolua_S)
 
     return 0;
 }
+int lua_geniusx_Entity_sendEvent(lua_State* tolua_S)
+{
+    int argc = 0;
+    GX::Entity* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"gx.Entity",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GX::Entity*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_geniusx_Entity_sendEvent'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 1) 
+    {
+        std::string arg0;
+
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0);
+        if(!ok)
+            return 0;
+        cobj->sendEvent(arg0);
+        return 0;
+    }
+    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "sendEvent",argc, 1);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_geniusx_Entity_sendEvent'.",&tolua_err);
+#endif
+
+    return 0;
+}
 int lua_geniusx_Entity_getId(lua_State* tolua_S)
 {
     int argc = 0;
@@ -2656,6 +2794,7 @@ int lua_register_geniusx_Entity(lua_State* tolua_S)
         tolua_function(tolua_S,"getComByType",lua_geniusx_Entity_getComByType);
         tolua_function(tolua_S,"getParent",lua_geniusx_Entity_getParent);
         tolua_function(tolua_S,"removeAllComs",lua_geniusx_Entity_removeAllComs);
+        tolua_function(tolua_S,"sendEvent",lua_geniusx_Entity_sendEvent);
         tolua_function(tolua_S,"getId",lua_geniusx_Entity_getId);
         tolua_function(tolua_S,"removeCom",lua_geniusx_Entity_removeCom);
         tolua_function(tolua_S,"getNode",lua_geniusx_Entity_getNode);

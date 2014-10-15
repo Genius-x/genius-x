@@ -269,6 +269,19 @@ void System::onComsChanged()
 #endif
 }
 
+void System::onEntityEvent(const std::string& eventName)
+{
+#if CC_ENABLE_SCRIPT_BINDING
+    if (_scriptType==kScriptTypeLua) {
+        SystemScriptData* custom=new SystemScriptData();
+        CommonScriptData data(_scriptHandler,eventName.c_str(),custom);
+        ScriptEvent event(kCommonEvent,(void*)&data);
+        ScriptEngineManager::getInstance()->getScriptEngine()->sendEvent(&event);
+        custom->release();
+    }
+#endif
+}
+
 bool System::onTouchBegan(Touch *touch, Event *event)
 {
 #if CC_ENABLE_SCRIPT_BINDING

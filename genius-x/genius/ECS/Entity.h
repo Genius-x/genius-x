@@ -74,6 +74,8 @@ public:
         return target._id==_id;
     }
     
+    void sendEvent(const std::string& eventName);
+    
 private:
     Entity();
     virtual ~Entity();
