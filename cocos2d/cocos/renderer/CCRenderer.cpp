@@ -484,6 +484,8 @@ void Renderer::drawBatchedQuads()
 
                 startQuad += quadsToDraw;
                 quadsToDraw = 0;
+                
+                glActiveTexture(GL_TEXTURE0+0);
             }
 
             //Use new material
@@ -501,6 +503,8 @@ void Renderer::drawBatchedQuads()
         glDrawElements(GL_TRIANGLES, (GLsizei) quadsToDraw*6, GL_UNSIGNED_SHORT, (GLvoid*) (startQuad*6*sizeof(_indices[0])) );
         _drawnBatches++;
         _drawnVertices += quadsToDraw*6;
+        
+        glActiveTexture(GL_TEXTURE0+0);
     }
 
     if (Configuration::getInstance()->supportsShareableVAO())

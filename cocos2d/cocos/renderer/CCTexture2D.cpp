@@ -48,10 +48,7 @@ THE SOFTWARE.
 
 #include "deprecated/CCString.h"
 
-
-#if CC_ENABLE_CACHE_TEXTURE_DATA
-    #include "renderer/CCTextureCache.h"
-#endif
+#include "renderer/CCTextureCache.h"
 
 NS_CC_BEGIN
 
@@ -454,6 +451,10 @@ Texture2D::~Texture2D()
     if(_name)
     {
         GL::deleteTexture(_name);
+    }
+    
+    if(_hasAlpha){
+        Director::getInstance()->getTextureCache()->getTextureForKey(_alphaTexture)->release();
     }
 }
 

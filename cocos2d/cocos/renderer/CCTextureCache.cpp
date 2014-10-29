@@ -214,23 +214,48 @@ void TextureCache::loadImage()
                generateImage = true;
         }
 
+        bool isETC;
+        std::string etcAlphaPath;
+        std::string fullpath = __getRealKey(asyncStruct->filename,isETC,etcAlphaPath);
+        
+        Image *alphaImage=nullptr;
+        
         if (generateImage)
         {
             const std::string& filename = asyncStruct->filename;
             // generate image      
             image = new Image();
-            if (image && !image->initWithImageFileThreadSafe(filename))
+            if (image && !image->initWithImageFileThreadSafe(fullpath))
             {
                 CC_SAFE_RELEASE(image);
                 CCLOG("can not load %s", filename.c_str());
                 continue;
             }
-        }    
+            
+            if (isETC) {
+                alphaImage=new Image();
+                if (alphaImage && !alphaImage->initWithImageFileThreadSafe(etcAlphaPath))
+                {
+                    CC_SAFE_RELEASE(alphaImage);
+                    CCLOG("can not load %s", etcAlphaPath.c_str());
+                    continue;
+                }
+            }
+        }
 
         // generate image info
         ImageInfo *imageInfo = new ImageInfo();
         imageInfo->asyncStruct = asyncStruct;
         imageInfo->image = image;
+        
+        if (isETC) {
+            imageInfo->alphaImage=alphaImage;
+            imageInfo->alphaPath=etcAlphaPath;
+        }
+        else {
+            imageInfo->alphaImage=nullptr;
+        }
+
 
         // put the image info into the queue
         _imageInfoMutex.lock();
@@ -265,6 +290,7 @@ void TextureCache::addImageAsyncCallBack(float dt)
 
         AsyncStruct *asyncStruct = imageInfo->asyncStruct;
         Image *image = imageInfo->image;
+        Image *alphaImage=imageInfo->alphaImage;
 
         const std::string& filename = asyncStruct->filename;
 
@@ -285,6 +311,13 @@ void TextureCache::addImageAsyncCallBack(float dt)
             texture->retain();
 
             texture->autorelease();
+            
+            //如果纹理为ETC1格式，则加载对应的Alpha纹理
+            if(alphaImage){
+                texture->setHasAlphaTexture(true);
+                addImage(imageInfo->alphaPath);
+                texture->setAlphaTexture(imageInfo->alphaPath);
+            }
         }
         else
         {

@@ -209,6 +209,8 @@ protected:
     {
         AsyncStruct *asyncStruct;
         Image        *image;
+        Image       *alphaImage;
+        std::string alphaPath;
     } ImageInfo;
     
     std::thread* _loadingThread;
