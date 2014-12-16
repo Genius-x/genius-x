@@ -93,7 +93,7 @@ ECSManager::~ECSManager()
 }
 
 
-bool __findEntity(const std::vector<Entity*>& entities,entity_id_type id)
+bool ECSManager::__findEntity(const cocos2d::Vector<Entity*>& entities,entity_id_type id)
 {
     for (auto iter=entities.begin(); iter!=entities.end(); iter++) {
         if ((*iter)->getId()==id) {
