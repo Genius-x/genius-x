@@ -32,7 +32,6 @@
 		14F4945E196B863500C743FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F4945D196B863500C743FB /* Foundation.framework */; };
 		14F494A5196B8D7B00C743FB /* Com.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49463196B8D7B00C743FB /* Com.cpp */; };
 		14F494A6196B8D7B00C743FB /* Com.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49463196B8D7B00C743FB /* Com.cpp */; };
-		14F494A7196B8D7B00C743FB /* Com.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F49464196B8D7B00C743FB /* Com.h */; };
 		14F494A8196B8D7B00C743FB /* AnimationCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49467196B8D7B00C743FB /* AnimationCom.cpp */; };
 		14F494A9196B8D7B00C743FB /* AnimationCom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F49467196B8D7B00C743FB /* AnimationCom.cpp */; };
 		14F494AA196B8D7B00C743FB /* AnimationCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F49468196B8D7B00C743FB /* AnimationCom.h */; };
@@ -520,7 +519,6 @@
 				14F494F8196B8D7B00C743FB /* DataBase.h in Headers */,
 				14F494F1196B8D7B00C743FB /* ResourceCache.h in Headers */,
 				14F494B6196B8D7B00C743FB /* ParticleCom.h in Headers */,
-				14F494A7196B8D7B00C743FB /* Com.h in Headers */,
 				14F494B9196B8D7B00C743FB /* TestCom.h in Headers */,
 				14F494E8196B8D7B00C743FB /* GXMacros.h in Headers */,
 				14F494CE196B8D7B00C743FB /* Entity.h in Headers */,
@@ -1063,6 +1061,7 @@
 				144C9796197D2C690026D426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		147EF65119684097000D2E7F /* Build configuration list for PBXProject "genius-x" */ = {
 			isa = XCConfigurationList;
