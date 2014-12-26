@@ -74,6 +74,8 @@ ResourceDataDelegate* ResourceCache::addResource(const std::string& filename,con
                 if(!data->initWithFile(filename))
                 {
                     CC_SAFE_RELEASE(data);
+                    CCLOG("ResouceDataDelegate is error: %s",iter1->first.c_str());
+                    break;
                 }
                 
                 _resourceDatas.insert(std::make_pair(fullpath, data));
